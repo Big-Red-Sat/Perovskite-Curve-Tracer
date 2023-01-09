@@ -40,13 +40,13 @@ def plot_curve(arg):
     plot1.plot(curve_points_v, curve_points_i)
 
 
-def adc_to_voltage(adc_code, voltage=3.3):
-    return (voltage * adc_code) / 4096.0
+def adc_to_voltage(adc_code, ref_voltage=3.3, max_bin=2**12, gain=0.5, bias_voltage=0.0):
+    return (((ref_voltage * adc_code) / float(max_bin - 1)) - bias_voltage) / gain
 
 
-def adc_to_current(adc_code):
-    v = adc_to_voltage(adc_code, voltage=1.2)
-    return ((v / 50.0) / 0.51) * 1000.0
+def adc_to_current(adc_code, gain=50.0, ref_voltage=1.2, max_bin=2**12, sense_res=0.01):
+    v = adc_to_voltage(adc_code, ref_voltage=ref_voltage, max_bin=max_bin, gain=1)
+    return (((v - 1.25) / gain) / sense_res) * 1000
 
 
 def read_curve():
@@ -58,8 +58,9 @@ def read_curve():
     while len(curve_point) != 256:
         reading = ''.join(map(chr, msp430_port.readline().strip())).split(' ')
         curve_point.append(int(reading[0]))
-        curve_points_v.append(adc_to_voltage(int(reading[1]), voltage=2.5))
-        curve_points_i.append(adc_to_current(int(reading[2])))
+        curve_points_v.append(adc_to_voltage(int(reading[1]), ref_voltage=2.5, bias_voltage=1.65))
+        curve_points_i.append(adc_to_current(int(reading[2]), ref_voltage=2.5, gain=500.0, sense_res=0.51))
+        print(f"V: {int(reading[1])} or {curve_points_v[-1]} \tI: {int(reading[2])} or {curve_points_i[-1]}")
     end_time = time.time()
     sc_cond.config(text=f"Short Circuit: {curve_points_v[-1]:.4f} V | {curve_points_i[-1]:.4f} mA")
     oc_cond.config(text=f"Open Circuit: {curve_points_v[0]:.4f} V | {curve_points_i[0]:.4f} mA")
@@ -68,6 +69,17 @@ def read_curve():
         curve_output_path = os.path.join(output_path, 'curve_' + str(len(os.listdir(output_path))) + '.csv')
         curve_df = pd.DataFrame([curve_points_v, curve_points_i], index=['Voltage', 'Current']).transpose()
         curve_df.to_csv(curve_output_path)
+
+
+def reverse_bias():
+    msp430_port.write(b'G')
+    current_bias = str(msp430_port.readline().strip().decode('utf-8'))
+    print(f"Current bias is {current_bias}")
+    if current_bias == '1':
+        reverse_bias_checkbox.select()
+    else:
+        reverse_bias_checkbox.deselect()
+    reverse_bias_checkbox.config(text=f"Reverse Bias = {current_bias}")
 
 
 def next_panel():
@@ -98,7 +110,7 @@ msp430_port = None
 ports = list_ports.comports()
 try:
     for port in ports:
-        if "MSP Application UART1" in port.description:
+        if 'D30DKQAVA' in port.serial_number:
             msp430_port = serial.Serial(port.device, baudrate=115200)
     if not msp430_port:
         messagebox.showerror("No MSP430 Found", "Make sure development board is plugged in!")
@@ -106,6 +118,7 @@ try:
 except SerialException as se:
     messagebox.showerror("Serial Exception", "Could not connect to serial port!")
 
+msp430_port.flush()
 root = tkinter.Tk()
 root.title("UNL Aerospace Club | Aerospace eXperimental Payloads 2022")
 root.configure(bg='white')
@@ -126,6 +139,9 @@ save_curves = tkinter.IntVar()
 save_checkbox = tkinter.Checkbutton(root, text='Save Curves?', bg='white', variable=save_curves)
 save_checkbox.pack()
 get_panel()
+
+reverse_bias_checkbox = tkinter.Checkbutton(root, text='Reverse Bias?', bg='white', command=reverse_bias)
+reverse_bias_checkbox.pack()
 
 fig = Figure(figsize=(5, 5), dpi=100)
 plot1 = fig.add_subplot(111)
