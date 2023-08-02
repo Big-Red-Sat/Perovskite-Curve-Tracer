@@ -29,15 +29,17 @@ fig_color = '#%02x%02x%02x' % (240, 240, 237)
 
 curve_points_i = []
 curve_points_v = []
+curve_points_j = []
 curve_point = []
+current_panel = 1
 
 
 def plot_curve(arg):
     plot1.clear()
     plot1.set_title("Photovoltaic I-V Curve")
     plot1.set_xlabel("Voltage (V)")
-    plot1.set_ylabel("Current (mA)")
-    plot1.plot(curve_points_v, curve_points_i)
+    plot1.set_ylabel("Current Density (mA cm^-2)")
+    plot1.plot(curve_points_v, curve_points_j)
 
 
 def adc_to_voltage(adc_code, ref_voltage=3.3, max_bin=2**12, gain=0.5, bias_voltage=0.0):
@@ -46,54 +48,74 @@ def adc_to_voltage(adc_code, ref_voltage=3.3, max_bin=2**12, gain=0.5, bias_volt
 
 def adc_to_current(adc_code, gain=50.0, ref_voltage=1.2, max_bin=2**12, sense_res=0.01):
     v = adc_to_voltage(adc_code, ref_voltage=ref_voltage, max_bin=max_bin, gain=1)
-    return (((v - 1.25) / gain) / sense_res) * 1000
+    return ((v / gain) / sense_res) * 1000
 
 
 def read_curve():
     curve_point.clear()
     curve_points_v.clear()
     curve_points_i.clear()
+    curve_points_j.clear()
+    pixel_area_value = float(1 if pixel_area.get() == "" else pixel_area.get())
     msp430_port.write(b'C')
     start_time = time.time()
     while len(curve_point) != 256:
         reading = ''.join(map(chr, msp430_port.readline().strip())).split(' ')
         curve_point.append(int(reading[0]))
-        curve_points_v.append(adc_to_voltage(int(reading[1]), ref_voltage=2.5, bias_voltage=1.65))
-        curve_points_i.append(adc_to_current(int(reading[2]), ref_voltage=2.5, gain=500.0, sense_res=0.51))
+        curve_points_v.append(adc_to_voltage(abs(int(reading[1])), ref_voltage=2.5, bias_voltage=0.0, max_bin=2**12))
+        curve_points_i.append(adc_to_current(abs(int(reading[2])), ref_voltage=2.5, gain=200.0, sense_res=0.51, max_bin=2**12))
+        curve_points_j.append(curve_points_i[-1] / pixel_area_value)
         print(f"V: {int(reading[1])} or {curve_points_v[-1]} \tI: {int(reading[2])} or {curve_points_i[-1]}")
+    temperature_reading = float(msp430_port.readline().strip()) / 100.0
     end_time = time.time()
     sc_cond.config(text=f"Short Circuit: {curve_points_v[-1]:.4f} V | {curve_points_i[-1]:.4f} mA")
     oc_cond.config(text=f"Open Circuit: {curve_points_v[0]:.4f} V | {curve_points_i[0]:.4f} mA")
     curve_time.config(text=f"Trace Time: {(end_time - start_time) * 10**3:.4f} ms")
+    temp_label.config(text=f"Panel Temperature: {temperature_reading} \u00b0C")
     if save_curves.get():
-        curve_output_path = os.path.join(output_path, 'curve_' + str(len(os.listdir(output_path))) + '.csv')
-        curve_df = pd.DataFrame([curve_points_v, curve_points_i], index=['Voltage', 'Current']).transpose()
+        if panel_name.get() != "":
+            root_dir = os.path.join(output_path, panel_name.get())
+            if not os.path.exists(root_dir):
+                os.mkdir(root_dir)
+            curve_output_path = os.path.join(root_dir,
+                                             f'curve_{temperature_reading}_{get_panel_int()}_' + str(
+                                                 len(os.listdir(output_path))) + '.csv')
+        else:
+            curve_output_path = os.path.join(output_path,
+                                             f'curve_{temperature_reading}_{get_panel_int()}_' + str(
+                                                 len(os.listdir(output_path))) + '.csv')
+        curve_df = pd.DataFrame([curve_points_v, curve_points_i, curve_points_j], index=['Voltage', 'Current', 'Current Density']).transpose()
         curve_df.to_csv(curve_output_path)
 
 
-def reverse_bias():
-    msp430_port.write(b'G')
-    current_bias = str(msp430_port.readline().strip().decode('utf-8'))
-    print(f"Current bias is {current_bias}")
-    if current_bias == '1':
-        reverse_bias_checkbox.select()
-    else:
-        reverse_bias_checkbox.deselect()
-    reverse_bias_checkbox.config(text=f"Reverse Bias = {current_bias}")
+# def reverse_bias():
+#     msp430_port.write(b'G')
+#     current_bias = str(msp430_port.readline().strip().decode('utf-8'))
+#     print(f"Current bias is {current_bias}")
+#     if current_bias == '1':
+#         reverse_bias_checkbox.select()
+#     else:
+#         reverse_bias_checkbox.deselect()
+#     reverse_bias_checkbox.config(text=f"Reverse Bias = {current_bias}")
 
 
 def next_panel():
     msp430_port.write(b'E')
     current_panel = msp430_port.readline().strip()
     print(f"Next panel is {str(int(current_panel))}")
-    panel_text.config(text=f"Current Panel: {str(int(current_panel))} / 20")
+    panel_text.config(text=f"Current Panel: {str(int(current_panel)+1)} / 6")
+
+
+def get_panel_int():
+    msp430_port.write(b'D')
+    return int(msp430_port.readline().strip())
 
 
 def get_panel():
     msp430_port.write(b'D')
     current_panel = msp430_port.readline().strip()
     print(f"Current panel is {str(int(current_panel))}")
-    panel_text.config(text=f"Current Panel: {str(int(current_panel))} / 20")
+    panel_text.config(text=f"Current Panel: {str(int(current_panel)+1)} / 6")
 
 
 def get_curve():
@@ -110,7 +132,7 @@ msp430_port = None
 ports = list_ports.comports()
 try:
     for port in ports:
-        if 'D30DKQAVA' in port.serial_number:
+        if 'A43F6A5122001A00' in port.serial_number:
             msp430_port = serial.Serial(port.device, baudrate=115200)
     if not msp430_port:
         messagebox.showerror("No MSP430 Found", "Make sure development board is plugged in!")
@@ -119,20 +141,34 @@ except SerialException as se:
     messagebox.showerror("Serial Exception", "Could not connect to serial port!")
 
 msp430_port.flush()
+
 root = tkinter.Tk()
-root.title("UNL Aerospace Club | Aerospace eXperimental Payloads 2022")
+root.title("UNL Aerospace Club | Aerospace eXperimental Payloads 2023")
 root.configure(bg='white')
+
+panel_name_text = tkinter.Label(root, text="Perovskite ID", bg='white')
+panel_name_text.pack()
+panel_name = tkinter.Entry(root)
+panel_name.pack()
+
+pixel_area_text = tkinter.Label(root, text="Pixel Area (cm^2)", bg='white')
+pixel_area_text.pack()
+pixel_area = tkinter.Entry(root)
+pixel_area.pack()
+
 button = tkinter.Button(root, text="Trace Curve", command=get_curve)
 button.pack()
 sc_cond = tkinter.Label(root, text="Short Circuit: --.-- V | --.-- mA", bg='white')
 sc_cond.pack()
 oc_cond = tkinter.Label(root, text="Open Circuit: --.-- V | --.-- mA", bg='white')
 oc_cond.pack()
+temp_label = tkinter.Label(root, text=f"Panel Temperature: --.-- \u00b0C", bg='white')
+temp_label.pack()
 curve_time = tkinter.Label(root, text="Trace Time: --.-- ms", bg='white')
 curve_time.pack()
 panel_button = tkinter.Button(root, text="Next Panel", command=next_panel)
 panel_button.pack()
-panel_text = tkinter.Label(root, text="Current Panel: 1 / 20", bg='white')
+panel_text = tkinter.Label(root, text="Current Panel: 1 / 6", bg='white')
 panel_text.pack()
 
 save_curves = tkinter.IntVar()
@@ -140,14 +176,14 @@ save_checkbox = tkinter.Checkbutton(root, text='Save Curves?', bg='white', varia
 save_checkbox.pack()
 get_panel()
 
-reverse_bias_checkbox = tkinter.Checkbutton(root, text='Reverse Bias?', bg='white', command=reverse_bias)
-reverse_bias_checkbox.pack()
+# reverse_bias_checkbox = tkinter.Checkbutton(root, text='Reverse Bias?', bg='white', command=reverse_bias)
+# reverse_bias_checkbox.pack()
 
 fig = Figure(figsize=(5, 5), dpi=100)
 plot1 = fig.add_subplot(111)
 plot1.set_title("Photovoltaic I-V Curve")
 plot1.set_xlabel("Voltage (V)")
-plot1.set_ylabel("Current (mA)")
+plot1.set_ylabel("Current Density (mA cm^-2)")
 canvas = FigureCanvasTkAgg(fig, master=root)
 canvas.draw()
 ani2 = animation.FuncAnimation(fig, plot_curve, fargs=([]), interval=100)
