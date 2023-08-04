@@ -78,12 +78,10 @@ def read_curve():
             if not os.path.exists(root_dir):
                 os.mkdir(root_dir)
             curve_output_path = os.path.join(root_dir,
-                                             f'curve_{temperature_reading}_{get_panel_int()}_' + str(
-                                                 len(os.listdir(output_path))) + '.csv')
+                                             f'curve_{temperature_reading}_{get_panel_int()}' + '.csv')
         else:
             curve_output_path = os.path.join(output_path,
-                                             f'curve_{temperature_reading}_{get_panel_int()}_' + str(
-                                                 len(os.listdir(output_path))) + '.csv')
+                                             f'curve_{temperature_reading}_{get_panel_int()}' + '.csv')
         curve_df = pd.DataFrame([curve_points_v, curve_points_i, curve_points_j], index=['Voltage', 'Current', 'Current Density']).transpose()
         curve_df.to_csv(curve_output_path)
 
@@ -102,8 +100,8 @@ def read_curve():
 def next_panel():
     msp430_port.write(b'E')
     current_panel = msp430_port.readline().strip()
-    print(f"Next panel is {str(int(current_panel))}")
-    panel_text.config(text=f"Current Panel: {str(int(current_panel)+1)} / 6")
+    print(f"Next pixel is {str(int(current_panel))}")
+    panel_text.config(text=f"Current Pixel: {str(int(current_panel)+1)} / 6")
 
 
 def get_panel_int():
@@ -114,8 +112,8 @@ def get_panel_int():
 def get_panel():
     msp430_port.write(b'D')
     current_panel = msp430_port.readline().strip()
-    print(f"Current panel is {str(int(current_panel))}")
-    panel_text.config(text=f"Current Panel: {str(int(current_panel)+1)} / 6")
+    print(f"Current pixel is {str(int(current_panel))}")
+    panel_text.config(text=f"Current Pixel: {str(int(current_panel)+1)} / 6")
 
 
 def get_curve():
@@ -166,9 +164,9 @@ temp_label = tkinter.Label(root, text=f"Panel Temperature: --.-- \u00b0C", bg='w
 temp_label.pack()
 curve_time = tkinter.Label(root, text="Trace Time: --.-- ms", bg='white')
 curve_time.pack()
-panel_button = tkinter.Button(root, text="Next Panel", command=next_panel)
+panel_button = tkinter.Button(root, text="Next Pixel", command=next_panel)
 panel_button.pack()
-panel_text = tkinter.Label(root, text="Current Panel: 1 / 6", bg='white')
+panel_text = tkinter.Label(root, text="Current Pixel: 1 / 6", bg='white')
 panel_text.pack()
 
 save_curves = tkinter.IntVar()
