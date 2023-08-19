@@ -4,10 +4,9 @@ import time
 import tkinter
 from tkinter import messagebox
 import os
-
+import datetime
 import matplotlib.pyplot as plt
 import serial
-from matplotlib import animation
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
 from serial import SerialException
@@ -27,19 +26,24 @@ plt.rc('legend', fontsize=SMALL_SIZE)  # legend fontsize
 plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
 fig_color = '#%02x%02x%02x' % (240, 240, 237)
 
-curve_points_i = []
-curve_points_v = []
-curve_points_j = []
-curve_point = []
+curve_points_i = [[] for _ in range(6)]
+curve_points_v = [[] for _ in range(6)]
+curve_points_j = [[] for _ in range(6)]
+curve_points_p = [[] for _ in range(6)]
+curve_point = [[] for _ in range(6)]
 current_panel = 1
 
 
-def plot_curve(arg):
+def clear_plot():
     plot1.clear()
-    plot1.set_title("Photovoltaic I-V Curve")
+
+
+def plot_curve(curve_i):
+    plot1.set_title("Perovskite J-V Curve")
     plot1.set_xlabel("Voltage (V)")
     plot1.set_ylabel("Current Density (mA cm^-2)")
-    plot1.plot(curve_points_v, curve_points_j)
+    plot1.plot(curve_points_v[curve_i], curve_points_j[curve_i], label=f"Pixel {curve_i}")
+    root.update()
 
 
 def adc_to_voltage(adc_code, ref_voltage=3.3, max_bin=2**12, gain=0.5, bias_voltage=0.0):
@@ -52,38 +56,74 @@ def adc_to_current(adc_code, gain=50.0, ref_voltage=1.2, max_bin=2**12, sense_re
 
 
 def read_curve():
-    curve_point.clear()
-    curve_points_v.clear()
-    curve_points_i.clear()
-    curve_points_j.clear()
-    pixel_area_value = float(1 if pixel_area.get() == "" else pixel_area.get())
-    msp430_port.write(b'C')
-    start_time = time.time()
-    while len(curve_point) != 256:
-        reading = ''.join(map(chr, msp430_port.readline().strip())).split(' ')
-        curve_point.append(int(reading[0]))
-        curve_points_v.append(adc_to_voltage(abs(int(reading[1])), ref_voltage=2.5, bias_voltage=0.0, max_bin=2**12))
-        curve_points_i.append(adc_to_current(abs(int(reading[2])), ref_voltage=2.5, gain=200.0, sense_res=0.51, max_bin=2**12))
-        curve_points_j.append(curve_points_i[-1] / pixel_area_value)
-        print(f"V: {int(reading[1])} or {curve_points_v[-1]} \tI: {int(reading[2])} or {curve_points_i[-1]}")
-    temperature_reading = float(msp430_port.readline().strip()) / 100.0
-    end_time = time.time()
-    sc_cond.config(text=f"Short Circuit: {curve_points_v[-1]:.4f} V | {curve_points_i[-1]:.4f} mA")
-    oc_cond.config(text=f"Open Circuit: {curve_points_v[0]:.4f} V | {curve_points_i[0]:.4f} mA")
-    curve_time.config(text=f"Trace Time: {(end_time - start_time) * 10**3:.4f} ms")
-    temp_label.config(text=f"Panel Temperature: {temperature_reading} \u00b0C")
+    clear_plot()
+    for i in range(6):
+        curve_point[i].clear()
+        curve_points_v[i].clear()
+        curve_points_i[i].clear()
+        curve_points_j[i].clear()
+        pixel_area_value = float(1 if pixel_area.get() == "" else pixel_area.get())
+        irradiance_value = float(100 if irradiance.get() == "" else irradiance.get())
+        msp430_port.write(b'C')
+        start_time = time.time()
+        while len(curve_point[i]) != 256:
+            reading = ''.join(map(chr, msp430_port.readline().strip())).split(' ')
+            curve_point[i].append(int(reading[0]))
+            curve_points_v[i].append(adc_to_voltage(abs(int(reading[1])), ref_voltage=3.29, bias_voltage=0.0, max_bin=2**12))
+            curve_points_i[i].append(adc_to_current(abs(int(reading[2])), ref_voltage=3.29, gain=200.0, sense_res=0.51, max_bin=2**12))
+            curve_points_j[i].append(curve_points_i[i][-1] / pixel_area_value)
+            curve_points_p[i].append(curve_points_v[i][-1] * curve_points_i[i][-1])
+        temperature_reading = float(msp430_port.readline().strip()) / 100.0
+        end_time = time.time()
+        sc_cond.config(text=f"Short Circuit: {curve_points_v[i][-1]:.4f} V | {curve_points_i[i][-1]:.4f} mA")
+        oc_cond.config(text=f"Open Circuit: {curve_points_v[i][0]:.4f} V | {curve_points_i[i][0]:.4f} mA")
+        curve_time.config(text=f"Trace Time: {(end_time - start_time) * 10**3:.4f} ms")
+        temp_label.config(text=f"Panel Temperature: {temperature_reading} \u00b0C")
+        plot_curve(i)
+        mpp_idx = max(enumerate(curve_points_p[i]), key=lambda x: x[1])[0]
+        voc = curve_points_v[i][0]
+        isc = curve_points_i[i][-1]
+        mpp_v = curve_points_v[i][mpp_idx]
+        mpp_i = curve_points_i[i][mpp_idx]
+        mpp_p = mpp_v * mpp_i
+        ff = (mpp_v * mpp_i) / (voc * isc)
+        eff = (mpp_p / pixel_area_value) / irradiance_value
+        test_time = datetime.datetime.now()
+        summary_df = pd.DataFrame(
+            [test_time, panel_name.get(), i, pixel_area_value, irradiance_value, temperature_reading, voc, isc, mpp_v, mpp_i, mpp_p, ff, eff],
+            index=["Time", "ID", "Pixel", "Pixel Area", "Irradiance", "Panel Temperature", "Voc", "Isc", "Vmp", "Imp", "Pmp", "FF", "Eff"]
+        )
+        if save_curves.get():
+            if panel_name.get() != "":
+                root_dir = os.path.join(output_path, panel_name.get())
+                if not os.path.exists(root_dir):
+                    os.mkdir(root_dir)
+                curve_output_path = os.path.join(root_dir,
+                                                 f'curve_{temperature_reading}_{get_panel_int()}' + '.xlsx')
+            else:
+                curve_output_path = os.path.join(output_path,
+                                                 f'curve_{temperature_reading}_{get_panel_int()}' + '.xlsx')
+            curve_df = pd.DataFrame([curve_points_v[i], curve_points_i[i], curve_points_j[i]],
+                                    index=['Voltage', 'Current', 'Current Density']).transpose()
+            writer = pd.ExcelWriter(curve_output_path, engine='xlsxwriter')
+            frames = {'Summary': summary_df, 'Data': curve_df}
+            # now loop thru and put each on a specific sheet
+            for sheet, frame in frames.items():  # .use .items for python 3.X
+                frame.to_excel(writer, sheet_name=sheet)
+            # critical last step
+            writer.save()
+        next_panel()
+    plot1.legend()
+    root.update()
     if save_curves.get():
         if panel_name.get() != "":
             root_dir = os.path.join(output_path, panel_name.get())
             if not os.path.exists(root_dir):
                 os.mkdir(root_dir)
-            curve_output_path = os.path.join(root_dir,
-                                             f'curve_{temperature_reading}_{get_panel_int()}' + '.csv')
+            curve_image_path = os.path.join(root_dir, f'{panel_name.get()}_plotted.png')
         else:
-            curve_output_path = os.path.join(output_path,
-                                             f'curve_{temperature_reading}_{get_panel_int()}' + '.csv')
-        curve_df = pd.DataFrame([curve_points_v, curve_points_i, curve_points_j], index=['Voltage', 'Current', 'Current Density']).transpose()
-        curve_df.to_csv(curve_output_path)
+            curve_image_path = os.path.join(output_path, f'all_plotted.png')
+        fig.savefig(curve_image_path, dpi=500)
 
 
 # def reverse_bias():
@@ -154,6 +194,11 @@ pixel_area_text.pack()
 pixel_area = tkinter.Entry(root)
 pixel_area.pack()
 
+irradiance_text = tkinter.Label(root, text="Irradiance (mW/cm^2)", bg='white')
+irradiance_text.pack()
+irradiance = tkinter.Entry(root)
+irradiance.pack()
+
 button = tkinter.Button(root, text="Trace Curve", command=get_curve)
 button.pack()
 sc_cond = tkinter.Label(root, text="Short Circuit: --.-- V | --.-- mA", bg='white')
@@ -164,8 +209,8 @@ temp_label = tkinter.Label(root, text=f"Panel Temperature: --.-- \u00b0C", bg='w
 temp_label.pack()
 curve_time = tkinter.Label(root, text="Trace Time: --.-- ms", bg='white')
 curve_time.pack()
-panel_button = tkinter.Button(root, text="Next Pixel", command=next_panel)
-panel_button.pack()
+# panel_button = tkinter.Button(root, text="Next Pixel", command=next_panel)
+# panel_button.pack()
 panel_text = tkinter.Label(root, text="Current Pixel: 1 / 6", bg='white')
 panel_text.pack()
 
@@ -179,12 +224,11 @@ get_panel()
 
 fig = Figure(figsize=(5, 5), dpi=100)
 plot1 = fig.add_subplot(111)
-plot1.set_title("Photovoltaic I-V Curve")
+plot1.set_title("Perovskite J-V Curve")
 plot1.set_xlabel("Voltage (V)")
 plot1.set_ylabel("Current Density (mA cm^-2)")
 canvas = FigureCanvasTkAgg(fig, master=root)
 canvas.draw()
-ani2 = animation.FuncAnimation(fig, plot_curve, fargs=([]), interval=100)
 
 canvas.get_tk_widget().pack()
 root.mainloop()
