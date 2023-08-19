@@ -1,5 +1,6 @@
 CERN Open Hardware Licence Version 2 - Strongly Reciprocal
 
+Copyright (c) 2023 Walker Arce
 
 Preamble
 
