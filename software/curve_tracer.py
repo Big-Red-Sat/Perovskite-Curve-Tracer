@@ -43,7 +43,7 @@ def plot_curve(curve_i):
     plot1.set_xlabel("Voltage (V)")
     plot1.set_ylabel("Current Density (mA cm^-2)")
     plot1.plot(curve_points_v[curve_i], curve_points_j[curve_i], label=f"Pixel {curve_i}")
-    root.update()
+    canvas.draw()
 
 
 def adc_to_voltage(adc_code, ref_voltage=3.3, max_bin=2**12, gain=0.5, bias_voltage=0.0):
@@ -63,7 +63,11 @@ def read_curve():
         curve_points_i[i].clear()
         curve_points_j[i].clear()
         pixel_area_value = float(1 if pixel_area.get() == "" else pixel_area.get())
+        if pixel_area_value < 0:
+            pixel_area_value = 1e-7
         irradiance_value = float(100 if irradiance.get() == "" else irradiance.get())
+        if irradiance_value < 0:
+            irradiance_value = 1e-7
         msp430_port.write(b'C')
         start_time = time.time()
         while len(curve_point[i]) != 256:
@@ -86,7 +90,7 @@ def read_curve():
         mpp_v = curve_points_v[i][mpp_idx]
         mpp_i = curve_points_i[i][mpp_idx]
         mpp_p = mpp_v * mpp_i
-        ff = (mpp_v * mpp_i) / (voc * isc)
+        ff = (mpp_v * mpp_i) / ((voc * isc) + 1e-7)
         eff = (mpp_p / pixel_area_value) / irradiance_value
         test_time = datetime.datetime.now()
         summary_df = pd.DataFrame(
@@ -103,18 +107,18 @@ def read_curve():
             else:
                 curve_output_path = os.path.join(output_path,
                                                  f'curve_{temperature_reading}_{get_panel_int()}' + '.xlsx')
-            curve_df = pd.DataFrame([curve_points_v[i], curve_points_i[i], curve_points_j[i]],
-                                    index=['Voltage', 'Current', 'Current Density']).transpose()
+            curve_df = pd.DataFrame([curve_points_v[i], curve_points_i[i], curve_points_j[i], curve_points_p[i]],
+                                    index=['Voltage', 'Current', 'Current Density', 'Power']).transpose()
             writer = pd.ExcelWriter(curve_output_path, engine='xlsxwriter')
             frames = {'Summary': summary_df, 'Data': curve_df}
             # now loop thru and put each on a specific sheet
             for sheet, frame in frames.items():  # .use .items for python 3.X
                 frame.to_excel(writer, sheet_name=sheet)
             # critical last step
-            writer.save()
+            writer.close()
         next_panel()
-    plot1.legend()
-    root.update()
+        plot1.legend()
+        canvas.draw()
     if save_curves.get():
         if panel_name.get() != "":
             root_dir = os.path.join(output_path, panel_name.get())
