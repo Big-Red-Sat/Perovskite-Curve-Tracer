@@ -57,6 +57,7 @@ def adc_to_current(adc_code, gain=50.0, ref_voltage=1.2, max_bin=2**12, sense_re
 
 def read_curve():
     clear_plot()
+    overall_summary = pd.DataFrame()
     for i in range(6):
         curve_point[i].clear()
         curve_points_v[i].clear()
@@ -97,6 +98,7 @@ def read_curve():
             [test_time, panel_name.get(), i, pixel_area_value, irradiance_value, temperature_reading, voc, isc, mpp_v, mpp_i, mpp_p, ff, eff],
             index=["Time", "ID", "Pixel", "Pixel Area", "Irradiance", "Panel Temperature", "Voc", "Isc", "Vmp", "Imp", "Pmp", "FF", "Eff"]
         )
+        overall_summary = pd.concat([overall_summary, summary_df], axis=1)
         if save_curves.get():
             if panel_name.get() != "":
                 root_dir = os.path.join(output_path, panel_name.get())
@@ -125,9 +127,18 @@ def read_curve():
             if not os.path.exists(root_dir):
                 os.mkdir(root_dir)
             curve_image_path = os.path.join(root_dir, f'{panel_name.get()}_plotted.png')
+            summary_output_path = os.path.join(root_dir, f"{panel_name.get()}_summary.xlsx")
         else:
             curve_image_path = os.path.join(output_path, f'all_plotted.png')
+            summary_output_path = os.path.join(output_path, f"all_summary.xlsx")
         fig.savefig(curve_image_path, dpi=500)
+        writer = pd.ExcelWriter(summary_output_path, engine='xlsxwriter')
+        frames = {'Summary': overall_summary}
+        # now loop thru and put each on a specific sheet
+        for sheet, frame in frames.items():  # .use .items for python 3.X
+            frame.to_excel(writer, sheet_name=sheet)
+        # critical last step
+        writer.close()
 
 
 # def reverse_bias():
