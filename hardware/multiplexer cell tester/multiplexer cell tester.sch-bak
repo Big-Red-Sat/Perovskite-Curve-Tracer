@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Title "IV Curve Tracer for Ossila AM1.5 Solar Simulator"
+Date "2023-07-08"
+Rev "A"
+Comp "Aerospace eXperimental Payloads | UNL Aerospace Club"
+Comment1 "Copyright (c) 2023"
+Comment2 "Designer: WSA"
+Comment3 "Reviewer: WSA"
+Comment4 "Approved: WSA"
 $EndDescr
 $Sheet
 S 4800 1650 1550 1150
