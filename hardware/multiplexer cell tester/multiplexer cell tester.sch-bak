@@ -3,9 +3,9 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 4
 Title "IV Curve Tracer for Ossila AM1.5 Solar Simulator"
-Date "2023-07-08"
+Date "2023-08-20"
 Rev "A"
 Comp "Aerospace eXperimental Payloads | UNL Aerospace Club"
 Comment1 "Copyright (c) 2023"
@@ -236,52 +236,6 @@ Text GLabel 2700 4450 2    50   Input ~ 0
 ~LADDER_RESET
 Text GLabel 2700 4550 2    50   Input ~ 0
 LADDER_CLOCK
-$Sheet
-S 8300 4550 1250 1100
-U 64A6B33A
-F0 "Passive ACDS" 50
-F1 "passive_acds.sch" 50
-F2 "SCL" I L 8300 4700 50 
-F3 "SDA" I L 8300 4800 50 
-F4 "PANEL_1_CURRENT" I L 8300 4950 50 
-F5 "PANEL_2_CURRENT" I L 8300 5050 50 
-F6 "PANEL_3_CURRENT" I L 8300 5150 50 
-F7 "RX" I L 8300 5300 50 
-F8 "TX" I L 8300 5400 50 
-F9 "BUSY" I L 8300 5500 50 
-$EndSheet
-Text GLabel 8200 4800 0    50   Input ~ 0
-SDA
-Text GLabel 8200 4700 0    50   Input ~ 0
-SCL
-Wire Wire Line
-	8200 4700 8300 4700
-Wire Wire Line
-	8300 4800 8200 4800
-Text GLabel 8200 5300 0    50   Input ~ 0
-RX
-Text GLabel 8200 5400 0    50   Input ~ 0
-TX
-Text GLabel 8200 5500 0    50   Input ~ 0
-BUSY
-Text GLabel 8200 4950 0    50   Input ~ 0
-PANEL_1
-Text GLabel 8200 5050 0    50   Input ~ 0
-PANEL_2
-Text GLabel 8200 5150 0    50   Input ~ 0
-PANEL_3
-Wire Wire Line
-	8200 5500 8300 5500
-Wire Wire Line
-	8300 5400 8200 5400
-Wire Wire Line
-	8200 5300 8300 5300
-Wire Wire Line
-	8300 5150 8200 5150
-Wire Wire Line
-	8200 5050 8300 5050
-Wire Wire Line
-	8200 4950 8300 4950
 Text GLabel 2400 4050 2    50   Input ~ 0
 RX
 Text GLabel 2400 4150 2    50   Input ~ 0
