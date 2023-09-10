@@ -1,0 +1,41 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# CD4071BE
+#
+DEF CD4071BE U 0 40 Y Y 1 L N
+F0 "U" -500 739 50 H V L BNN
+F1 "CD4071BE" -500 -857 50 H V L BNN
+F2 "DIP794W45P254L1969H508Q14" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Texas Instruments" 0 0 50 H I L BNN "MF"
+F5 "\n4-ch, 2-input, 3-V to 18-V OR gates\n" 0 0 50 H I L BNN "Description"
+F6 "PDIP-14 Texas Instruments" 0 0 50 H I L BNN "Package"
+F7 "None" 0 0 50 H I L BNN "Price"
+F8 "https://www.snapeda.com/parts/CD4071BE/Texas+Instruments/view-part/?ref=snap" 0 0 50 H I L BNN "SnapEDA_Link"
+F9 "CD4071BE" 0 0 50 H I L BNN "MP"
+F10 "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=104231&manufacturer=Texas Instruments&part_name=CD4071BE&search_term=None" 0 0 50 H I L BNN "Purchase-URL"
+F11 "In Stock" 0 0 50 H I L BNN "Availability"
+F12 "https://www.snapeda.com/parts/CD4071BE/Texas+Instruments/view-part/?ref=eda" 0 0 50 H I L BNN "Check_prices"
+DRAW
+S -500 -700 500 700 0 0 16 f
+X A 1 -700 400 200 R 40 40 0 0 I 
+X B 2 -700 300 200 R 40 40 0 0 I 
+X C 5 -700 200 200 R 40 40 0 0 I 
+X D 6 -700 100 200 R 40 40 0 0 I 
+X E 8 -700 0 200 R 40 40 0 0 I 
+X F 9 -700 -100 200 R 40 40 0 0 I 
+X G 12 -700 -200 200 R 40 40 0 0 I 
+X H 13 -700 -300 200 R 40 40 0 0 I 
+X VDD 14 700 600 200 L 40 40 0 0 W 
+X J=A+B 3 700 400 200 L 40 40 0 0 O 
+X K=C+D 4 700 300 200 L 40 40 0 0 O 
+X L=E+F 10 700 200 200 L 40 40 0 0 O 
+X M=G+H 11 700 100 200 L 40 40 0 0 O 
+X VSS 7 700 -600 200 L 40 40 0 0 W 
+ENDDRAW
+ENDDEF
+#
+# End Library
