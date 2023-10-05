@@ -32,6 +32,9 @@ curve_points_j = [[] for _ in range(6)]
 curve_points_p = [[] for _ in range(6)]
 curve_point = [[] for _ in range(6)]
 current_panel = 1
+current_direction = False
+
+direction_text = ["Reverse", "Forward"]
 
 
 def clear_plot():
@@ -39,10 +42,11 @@ def clear_plot():
 
 
 def plot_curve(curve_i):
+    global current_direction
     plot1.set_title("Perovskite J-V Curve")
     plot1.set_xlabel("Voltage (V)")
     plot1.set_ylabel("Current Density (mA cm^-2)")
-    plot1.plot(curve_points_v[curve_i], curve_points_j[curve_i], label=f"Pixel {curve_i}")
+    plot1.plot(curve_points_v[curve_i], curve_points_j[curve_i], label=f"Pixel {curve_i} {direction_text[int(current_direction)]}")
     canvas.draw()
 
 
@@ -58,87 +62,94 @@ def adc_to_current(adc_code, gain=50.0, ref_voltage=1.2, max_bin=2**12, sense_re
 def read_curve():
     clear_plot()
     overall_summary = pd.DataFrame()
-    for i in range(6):
-        curve_point[i].clear()
-        curve_points_v[i].clear()
-        curve_points_i[i].clear()
-        curve_points_j[i].clear()
-        pixel_area_value = float(1 if pixel_area.get() == "" else pixel_area.get())
-        if pixel_area_value < 0:
-            pixel_area_value = 1e-7
-        irradiance_value = float(100 if irradiance.get() == "" else irradiance.get())
-        if irradiance_value < 0:
-            irradiance_value = 1e-7
-        msp430_port.write(b'C')
-        start_time = time.time()
-        while len(curve_point[i]) != 256:
-            reading = ''.join(map(chr, msp430_port.readline().strip())).split(' ')
-            curve_point[i].append(int(reading[0]))
-            curve_points_v[i].append(adc_to_voltage(abs(int(reading[1])), ref_voltage=3.29, bias_voltage=0.0, max_bin=2**12))
-            curve_points_i[i].append(adc_to_current(abs(int(reading[2])), ref_voltage=3.29, gain=200.0, sense_res=0.51, max_bin=2**12))
-            curve_points_j[i].append(curve_points_i[i][-1] / pixel_area_value)
-            curve_points_p[i].append(curve_points_v[i][-1] * curve_points_i[i][-1])
-        temperature_reading = float(msp430_port.readline().strip()) / 100.0
-        end_time = time.time()
-        sc_cond.config(text=f"Short Circuit: {curve_points_v[i][-1]:.4f} V | {curve_points_i[i][-1]:.4f} mA")
-        oc_cond.config(text=f"Open Circuit: {curve_points_v[i][0]:.4f} V | {curve_points_i[i][0]:.4f} mA")
-        curve_time.config(text=f"Trace Time: {(end_time - start_time) * 10**3:.4f} ms")
-        temp_label.config(text=f"Panel Temperature: {temperature_reading} \u00b0C")
-        plot_curve(i)
-        mpp_idx = max(enumerate(curve_points_p[i]), key=lambda x: x[1])[0]
-        voc = curve_points_v[i][0]
-        isc = curve_points_i[i][-1]
-        mpp_v = curve_points_v[i][mpp_idx]
-        mpp_i = curve_points_i[i][mpp_idx]
-        mpp_p = mpp_v * mpp_i
-        ff = (mpp_v * mpp_i) / ((voc * isc) + 1e-7)
-        eff = (mpp_p / pixel_area_value) / irradiance_value
-        test_time = datetime.datetime.now()
-        summary_df = pd.DataFrame(
-            [test_time, panel_name.get(), i, pixel_area_value, irradiance_value, temperature_reading, voc, isc, mpp_v, mpp_i, mpp_p, ff, eff],
-            index=["Time", "ID", "Pixel", "Pixel Area", "Irradiance", "Panel Temperature", "Voc", "Isc", "Vmp", "Imp", "Pmp", "FF", "Eff"]
-        )
-        overall_summary = pd.concat([overall_summary, summary_df], axis=1)
+    for dirs in range(2):
+        if dirs:
+            reverse_trace_direction()
+        for i in range(6):
+            curve_point[i].clear()
+            curve_points_v[i].clear()
+            curve_points_i[i].clear()
+            curve_points_j[i].clear()
+            curve_points_p[i].clear()
+            pixel_area_value = float(1 if pixel_area.get() == "" else pixel_area.get())
+            if pixel_area_value < 0:
+                pixel_area_value = 1e-7
+            irradiance_value = float(100 if irradiance.get() == "" else irradiance.get())
+            if irradiance_value < 0:
+                irradiance_value = 1e-7
+            msp430_port.write(b'C')
+            start_time = time.time()
+            while len(curve_point[i]) != 256:
+                reading = ''.join(map(chr, msp430_port.readline().strip())).split(' ')
+                curve_point[i].append(int(reading[0]))
+                curve_points_v[i].append(adc_to_voltage(abs(int(reading[1])), ref_voltage=3.29, bias_voltage=0.0, max_bin=2**12))
+                curve_points_i[i].append(adc_to_current(abs(int(reading[2])), ref_voltage=3.29, gain=200.0, sense_res=0.51, max_bin=2**12))
+                curve_points_j[i].append(curve_points_i[i][-1] / pixel_area_value)
+                curve_points_p[i].append(curve_points_v[i][-1] * curve_points_i[i][-1])
+            temperature_reading = float(msp430_port.readline().strip()) / 100.0
+            end_time = time.time()
+            sc_cond.config(text=f"Short Circuit: {curve_points_v[i][-1]:.4f} V | {curve_points_i[i][-1]:.4f} mA")
+            oc_cond.config(text=f"Open Circuit: {curve_points_v[i][0]:.4f} V | {curve_points_i[i][0]:.4f} mA")
+            curve_time.config(text=f"Trace Time: {(end_time - start_time) * 10**3:.4f} ms")
+            # temp_label.config(text=f"Panel Temperature: {temperature_reading} \u00b0C")
+            plot_curve(i)
+            mpp_idx = max(enumerate(curve_points_p[i]), key=lambda x: x[1])[0]
+            voc = curve_points_v[i][0]
+            isc = curve_points_i[i][-1]
+            mpp_v = curve_points_v[i][mpp_idx]
+            mpp_i = curve_points_i[i][mpp_idx]
+            mpp_p = mpp_v * mpp_i
+            ff = (mpp_v * mpp_i) / ((voc * isc) + 1e-7)
+            eff = (mpp_p / pixel_area_value) / irradiance_value
+            test_time = datetime.datetime.now()
+            summary_df = pd.DataFrame(
+                [test_time, panel_name.get(), i, pixel_area_value, irradiance_value, temperature_reading, voc, isc, mpp_v, mpp_i, mpp_p, ff, eff, direction_text[dirs]],
+                index=["Time", "ID", "Pixel", "Pixel Area", "Irradiance", "Panel Temperature", "Voc", "Isc", "Vmp", "Imp", "Pmp", "FF", "Eff", "Dir"]
+            )
+            overall_summary = pd.concat([overall_summary, summary_df], axis=1)
+            if save_curves.get():
+                if panel_name.get() != "":
+                    root_dir = os.path.join(output_path, panel_name.get())
+                    if not os.path.exists(root_dir):
+                        os.mkdir(root_dir)
+                    curve_output_path = os.path.join(root_dir,
+                                                     f'curve_{temperature_reading}_{get_panel_int()}_{direction_text[dirs]}' + '.xlsx')
+                else:
+                    curve_output_path = os.path.join(output_path,
+                                                     f'curve_{temperature_reading}_{get_panel_int()}_{direction_text[dirs]}' + '.xlsx')
+                curve_df = pd.DataFrame([curve_points_v[i], curve_points_i[i], curve_points_j[i], curve_points_p[i]],
+                                        index=['Voltage', 'Current', 'Current Density', 'Power']).transpose()
+                writer = pd.ExcelWriter(curve_output_path, engine='xlsxwriter')
+                frames = {'Summary': summary_df, 'Data': curve_df}
+                # now loop thru and put each on a specific sheet
+                for sheet, frame in frames.items():  # .use .items for python 3.X
+                    frame.to_excel(writer, sheet_name=sheet)
+                # critical last step
+                writer.close()
+            next_panel()
+            plot1.legend()
+            canvas.draw()
         if save_curves.get():
             if panel_name.get() != "":
                 root_dir = os.path.join(output_path, panel_name.get())
                 if not os.path.exists(root_dir):
                     os.mkdir(root_dir)
-                curve_output_path = os.path.join(root_dir,
-                                                 f'curve_{temperature_reading}_{get_panel_int()}' + '.xlsx')
+                curve_image_path = os.path.join(root_dir, f'{panel_name.get()}_plotted_{direction_text[dirs]}.png')
+                summary_output_path = os.path.join(root_dir, f"{panel_name.get()}_summary_{direction_text[dirs]}.xlsx")
             else:
-                curve_output_path = os.path.join(output_path,
-                                                 f'curve_{temperature_reading}_{get_panel_int()}' + '.xlsx')
-            curve_df = pd.DataFrame([curve_points_v[i], curve_points_i[i], curve_points_j[i], curve_points_p[i]],
-                                    index=['Voltage', 'Current', 'Current Density', 'Power']).transpose()
-            writer = pd.ExcelWriter(curve_output_path, engine='xlsxwriter')
-            frames = {'Summary': summary_df, 'Data': curve_df}
+                curve_image_path = os.path.join(output_path, f'all_plotted_{direction_text[dirs]}.png')
+                summary_output_path = os.path.join(output_path, f"all_summary_{direction_text[dirs]}.xlsx")
+            fig.savefig(curve_image_path, dpi=500)
+            writer = pd.ExcelWriter(summary_output_path, engine='xlsxwriter')
+            frames = {'Summary': overall_summary}
             # now loop thru and put each on a specific sheet
             for sheet, frame in frames.items():  # .use .items for python 3.X
                 frame.to_excel(writer, sheet_name=sheet)
             # critical last step
             writer.close()
-        next_panel()
-        plot1.legend()
-        canvas.draw()
-    if save_curves.get():
-        if panel_name.get() != "":
-            root_dir = os.path.join(output_path, panel_name.get())
-            if not os.path.exists(root_dir):
-                os.mkdir(root_dir)
-            curve_image_path = os.path.join(root_dir, f'{panel_name.get()}_plotted.png')
-            summary_output_path = os.path.join(root_dir, f"{panel_name.get()}_summary.xlsx")
-        else:
-            curve_image_path = os.path.join(output_path, f'all_plotted.png')
-            summary_output_path = os.path.join(output_path, f"all_summary.xlsx")
-        fig.savefig(curve_image_path, dpi=500)
-        writer = pd.ExcelWriter(summary_output_path, engine='xlsxwriter')
-        frames = {'Summary': overall_summary}
-        # now loop thru and put each on a specific sheet
-        for sheet, frame in frames.items():  # .use .items for python 3.X
-            frame.to_excel(writer, sheet_name=sheet)
-        # critical last step
-        writer.close()
+        if dirs:
+            reverse_trace_direction()
+        clear_plot()
 
 
 # def reverse_bias():
@@ -164,6 +175,19 @@ def get_panel_int():
     return int(msp430_port.readline().strip())
 
 
+def reverse_trace_direction():
+    msp430_port.write(b'F')
+    global current_direction
+    current_direction = bool(msp430_port.readline().strip())
+
+    if not current_direction:
+        print(f"Current trace direction is reverse (Isc to Voc)")
+        temp_label.config(text=f"Trace Direction: Reverse")
+    else:
+        print(f"Current trace direction is forward (Voc to Isc)")
+        temp_label.config(text=f"Trace Direction: Forward")
+
+
 def get_panel():
     msp430_port.write(b'D')
     current_panel = msp430_port.readline().strip()
@@ -185,7 +209,7 @@ msp430_port = None
 ports = list_ports.comports()
 try:
     for port in ports:
-        if 'A43F6A5122001A00' in port.serial_number:
+        if 'MSP Application UART1' in port.description:
             msp430_port = serial.Serial(port.device, baudrate=115200)
     if not msp430_port:
         messagebox.showerror("No MSP430 Found", "Make sure development board is plugged in!")
@@ -220,7 +244,7 @@ sc_cond = tkinter.Label(root, text="Short Circuit: --.-- V | --.-- mA", bg='whit
 sc_cond.pack()
 oc_cond = tkinter.Label(root, text="Open Circuit: --.-- V | --.-- mA", bg='white')
 oc_cond.pack()
-temp_label = tkinter.Label(root, text=f"Panel Temperature: --.-- \u00b0C", bg='white')
+temp_label = tkinter.Label(root, text=f"Trace Direction: Forward", bg='white')
 temp_label.pack()
 curve_time = tkinter.Label(root, text="Trace Time: --.-- ms", bg='white')
 curve_time.pack()

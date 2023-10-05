@@ -11,6 +11,8 @@
 #include <MCP9808.h>      // http://github.com/JChristensen/MCP9808
 #include "MCP4725.h"
 
+#define CD4516
+
 #define R_DIVIDER_V       A11
 #define R_DIVIDER_I       A10
 
@@ -22,6 +24,7 @@
 // Resistor Ladder Pins
 #define R_DIVIDER_CLOCK   8
 #define R_DIVIDER_RESET   7
+#define R_DIVIDER_UD      6
 
 // Other Pins
 #define REVERSE_BIAS  15
@@ -44,16 +47,25 @@ volatile int current_panel = 0;
 volatile int current_step = 0;
 volatile uint8_t status_register = 0;
 volatile bool reverse_bias = false;
+volatile bool up_down = false;
 
 int v_readings[256];
 int i_readings[256];
 int t_reading;
 
+#ifdef CD4516
+  #define RESET_ON true
+  #define RESET_OFF false
+#else
+  #define RESET_ON false
+  #define RESET_OFF true
+#endif
+
 uint8_t status;
 
 void setup_pins(void)
 {
-  perovskite_1.begin();
+  //perovskite_1.begin();
   
   pinMode(RESET_PANEL_SWITCH, OUTPUT);
   digitalWrite(RESET_PANEL_SWITCH, LOW);
@@ -68,7 +80,10 @@ void setup_pins(void)
   digitalWrite(R_DIVIDER_CLOCK, LOW);
   
   pinMode(R_DIVIDER_RESET, OUTPUT);
-  pinMode(R_DIVIDER_RESET, HIGH);
+  digitalWrite(R_DIVIDER_RESET, RESET_OFF);
+
+  pinMode(R_DIVIDER_UD, OUTPUT);
+  digitalWrite(R_DIVIDER_UD, up_down);
 
   pinMode(REVERSE_BIAS, OUTPUT);
   digitalWrite(REVERSE_BIAS, LOW);
@@ -93,8 +108,16 @@ void read_point(int reading_index)
 
 void reset_ladder(void)
 {
-  digitalWrite(R_DIVIDER_RESET, LOW);
-  digitalWrite(R_DIVIDER_RESET, HIGH);
+  digitalWrite(R_DIVIDER_RESET, RESET_ON);
+  digitalWrite(R_DIVIDER_RESET, RESET_OFF);
+
+#ifdef CD4516
+  // CD4516 ladder starts on 0x00, if counting down, then go to zero
+  if (!up_down)
+  {
+    step_ladder();
+  }
+#endif
   current_step = 0;
 }
 
@@ -127,14 +150,6 @@ int read_divider_i(void)
 
 void trace_curve(void)
 {
-  if ((status = perovskite_1.read()) == 0 )
-  {
-    t_reading = (int)((perovskite_1.tAmbient / 16.0)*100);
-  }
-  else
-  {
-    t_reading = 0;
-  }
   for (int i = 0; i < 256; i++)
   {
     delay(SETTLING_TIME);
@@ -180,6 +195,7 @@ void reset_decoder(void)
 
 void setup() {
   Serial.begin(115200);
+  while (!Serial);
   
   analogReadResolution(12);
   analogReference(EXTERNAL);
@@ -207,20 +223,19 @@ void loop() {
     {
       step_decoder();
     }
+    else if (command[0] == 70)
+    {
+      up_down = !up_down;
+      digitalWrite(R_DIVIDER_UD, up_down);
+      Serial.println(up_down);
+    }
   }
   if (!digitalRead(SWITCH1))
   {
     digitalWrite(LED1, HIGH);
     
-    if ((status = perovskite_1.read()) == 0)
-    {
-      Serial.println(perovskite_1.tAmbient / 16.0);
-    }
-    else
-    {
-      while(1);
-    }
-
+    step_ladder();
+    
     while (!digitalRead(SWITCH1));
     digitalWrite(LED1, LOW);
   }

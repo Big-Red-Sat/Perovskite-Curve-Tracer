@@ -775,23 +775,23 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint_2Pole TP15
 U 1 1 64C2A848
-P 3800 7200
-F 0 "TP15" H 3800 7395 50  0000 C CNN
-F 1 "Current Test" H 3800 7304 50  0000 C CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 3800 7200 50  0001 C CNN
-F 3 "~" H 3800 7200 50  0001 C CNN
-	1    3800 7200
+P 4100 7200
+F 0 "TP15" H 4100 7395 50  0000 C CNN
+F 1 "Current Test" H 4100 7304 50  0000 C CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 4100 7200 50  0001 C CNN
+F 3 "~" H 4100 7200 50  0001 C CNN
+	1    4100 7200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x01_Male J17
 U 1 1 64C2CA59
-P 4200 7200
-F 0 "J17" H 4172 7132 50  0000 R CNN
-F 1 "Conn_01x01_Male" H 4172 7223 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4200 7200 50  0001 C CNN
-F 3 "~" H 4200 7200 50  0001 C CNN
-	1    4200 7200
+P 4500 7200
+F 0 "J17" H 4472 7132 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 4472 7223 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4500 7200 50  0001 C CNN
+F 3 "~" H 4500 7200 50  0001 C CNN
+	1    4500 7200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -992,4 +992,43 @@ F 3 "" H 5750 5450 50  0001 C CNN
 	1    5750 5450
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 651EFBC4
+P 3750 7550
+AR Path="/6313FC31/651EFBC4" Ref="#PWR?"  Part="1" 
+AR Path="/651EFBC4" Ref="#PWR?"  Part="1" 
+AR Path="/635FE71D/651EFBC4" Ref="#PWR?"  Part="1" 
+AR Path="/63C503EE/651EFBC4" Ref="#PWR?"  Part="1" 
+AR Path="/64A4749F/651EFBC4" Ref="#PWR0131"  Part="1" 
+F 0 "#PWR0131" H 3750 7300 50  0001 C CNN
+F 1 "GND" H 3755 7377 50  0000 C CNN
+F 2 "" H 3750 7550 50  0001 C CNN
+F 3 "" H 3750 7550 50  0001 C CNN
+	1    3750 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 651EFBD0
+P 3750 7400
+AR Path="/6313FC31/651EFBD0" Ref="C?"  Part="1" 
+AR Path="/651EFBD0" Ref="C?"  Part="1" 
+AR Path="/635FE71D/651EFBD0" Ref="C?"  Part="1" 
+AR Path="/63C503EE/651EFBD0" Ref="C?"  Part="1" 
+AR Path="/64A4749F/651EFBD0" Ref="C7"  Part="1" 
+F 0 "C7" V 4002 7400 50  0000 C CNN
+F 1 "1u" V 3911 7400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3788 7250 50  0001 C CNN
+F 3 "~" H 3750 7400 50  0001 C CNN
+	1    3750 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 7200 3750 7200
+Wire Wire Line
+	3750 7200 3750 7250
+Wire Wire Line
+	3750 7200 3900 7200
+Connection ~ 3750 7200
 $EndSCHEMATC
