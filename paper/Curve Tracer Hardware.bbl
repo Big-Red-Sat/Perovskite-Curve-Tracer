@@ -1,0 +1,2283 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{arce2023unobtrusive}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=2da906324f1cc2f806c0c007e1d99d60}{%
+           family={Arce},
+           familyi={A\bibinitperiod},
+           given={Walker},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Nebraska-Lincoln}%
+      }
+      \strng{namehash}{2da906324f1cc2f806c0c007e1d99d60}
+      \strng{fullhash}{2da906324f1cc2f806c0c007e1d99d60}
+      \strng{bibnamehash}{2da906324f1cc2f806c0c007e1d99d60}
+      \strng{authorbibnamehash}{2da906324f1cc2f806c0c007e1d99d60}
+      \strng{authornamehash}{2da906324f1cc2f806c0c007e1d99d60}
+      \strng{authorfullhash}{2da906324f1cc2f806c0c007e1d99d60}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Unobtrusive Data Collection in Clinical Settings for Advanced Patient Monitoring and Machine Learning}
+      \field{type}{mathesis}
+      \field{year}{2023}
+    \endentry
+    \entry{arce2021biosensor}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2da906324f1cc2f806c0c007e1d99d60}{%
+           family={Arce},
+           familyi={A\bibinitperiod},
+           given={Walker},
+           giveni={W\bibinitperiod}}}%
+        {{hash=48161901dd7246b5e10031616c18c040}{%
+           family={Gehringer},
+           familyi={G\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{01804567ecae746eb3d5cbef7407632d}
+      \strng{fullhash}{01804567ecae746eb3d5cbef7407632d}
+      \strng{bibnamehash}{01804567ecae746eb3d5cbef7407632d}
+      \strng{authorbibnamehash}{01804567ecae746eb3d5cbef7407632d}
+      \strng{authornamehash}{01804567ecae746eb3d5cbef7407632d}
+      \strng{authorfullhash}{01804567ecae746eb3d5cbef7407632d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Open Source Software}
+      \field{number}{64}
+      \field{title}{Biosensor framework: AC\# library for affective computing}
+      \field{volume}{6}
+      \field{year}{2021}
+      \field{pages}{3455}
+      \range{pages}{1}
+    \endentry
+    \entry{arce2023detecting}{article}{}
+      \name{author}{5}{}{%
+        {{hash=cd678c54c292d712deb4c2ffa848dc85}{%
+           family={Arce},
+           familyi={A\bibinitperiod},
+           given={Walker\bibnamedelima S},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=1f28836553e9f7e2e57f5aea55f9e8fa}{%
+           family={Walker},
+           familyi={W\bibinitperiod},
+           given={Seth\bibnamedelima G},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=fca418e76c95f72fc95fb7a847679958}{%
+           family={DeBrine},
+           familyi={D\bibinitperiod},
+           given={Jordan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=89e8a7f1cf49e75c9fca0bb391e03e44}{%
+           family={Riggan},
+           familyi={R\bibinitperiod},
+           given={Benjamin\bibnamedelima S},
+           giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=1b9e1fc70b551e1b6851cab62378395c}{%
+           family={Gehringer},
+           familyi={G\bibinitperiod},
+           given={James\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{67c7dd5539eed9f8c873d96b8920f20f}
+      \strng{fullhash}{b40e902c51a59617799a46486bad4f5b}
+      \strng{bibnamehash}{67c7dd5539eed9f8c873d96b8920f20f}
+      \strng{authorbibnamehash}{67c7dd5539eed9f8c873d96b8920f20f}
+      \strng{authornamehash}{67c7dd5539eed9f8c873d96b8920f20f}
+      \strng{authorfullhash}{b40e902c51a59617799a46486bad4f5b}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Machine Learning with Applications}
+      \field{title}{Detecting aggression in clinical treatment videos}
+      \field{volume}{14}
+      \field{year}{2023}
+      \field{pages}{100515}
+      \range{pages}{1}
+    \endentry
+    \entry{benedek2010continuous}{article}{}
+      \name{author}{2}{}{%
+        {{hash=016d1671d3b73df3c2171f402c594737}{%
+           family={Benedek},
+           familyi={B\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fc5d39330757d445e9b2f919db0947f1}{%
+           family={Kaernbach},
+           familyi={K\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{6754ceeb1c3182eddcecddf7e79c5c65}
+      \strng{fullhash}{6754ceeb1c3182eddcecddf7e79c5c65}
+      \strng{bibnamehash}{6754ceeb1c3182eddcecddf7e79c5c65}
+      \strng{authorbibnamehash}{6754ceeb1c3182eddcecddf7e79c5c65}
+      \strng{authornamehash}{6754ceeb1c3182eddcecddf7e79c5c65}
+      \strng{authorfullhash}{6754ceeb1c3182eddcecddf7e79c5c65}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of neuroscience methods}
+      \field{number}{1}
+      \field{title}{A continuous measure of phasic electrodermal activity}
+      \field{volume}{190}
+      \field{year}{2010}
+      \field{pages}{80\bibrangedash 91}
+      \range{pages}{12}
+    \endentry
+    \entry{berman2008cognitive}{article}{}
+      \name{author}{3}{}{%
+        {{hash=58991362ca1ea259613aa91f32ff16e8}{%
+           family={Berman},
+           familyi={B\bibinitperiod},
+           given={Marc\bibnamedelima G},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=b8cb3470dc03157062699c005f7d569d}{%
+           family={Jonides},
+           familyi={J\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=03561f3b10c24d2f4024878ecd725f57}{%
+           family={Kaplan},
+           familyi={K\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications Sage CA: Los Angeles, CA}%
+      }
+      \strng{namehash}{cebfa91ee947b1414cd96f96fe1fc4e3}
+      \strng{fullhash}{cebfa91ee947b1414cd96f96fe1fc4e3}
+      \strng{bibnamehash}{cebfa91ee947b1414cd96f96fe1fc4e3}
+      \strng{authorbibnamehash}{cebfa91ee947b1414cd96f96fe1fc4e3}
+      \strng{authornamehash}{cebfa91ee947b1414cd96f96fe1fc4e3}
+      \strng{authorfullhash}{cebfa91ee947b1414cd96f96fe1fc4e3}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological science}
+      \field{number}{12}
+      \field{title}{The cognitive benefits of interacting with nature}
+      \field{volume}{19}
+      \field{year}{2008}
+      \field{pages}{1207\bibrangedash 1212}
+      \range{pages}{6}
+    \endentry
+    \entry{breiman1999random}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c4de625aef3b09e83edf76c200750fc6}{%
+           family={Breiman},
+           familyi={B\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{fullhash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{bibnamehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{authorbibnamehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{authornamehash}{c4de625aef3b09e83edf76c200750fc6}
+      \strng{authorfullhash}{c4de625aef3b09e83edf76c200750fc6}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Statistical Department, UC Berkeley, USA}
+      \field{title}{Random forests-random features Technical Report 576}
+      \field{year}{1999}
+    \endentry
+    \entry{breiman1984nonlinear}{book}{}
+      \name{author}{2}{}{%
+        {{hash=132b7100417675d55d5d4d8b244f7a34}{%
+           family={Breiman},
+           familyi={B\bibinitperiod},
+           given={Leo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ac7719f901654e5ae5281acf37563142}{%
+           family={Ihaka},
+           familyi={I\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Department of Statistics, University of California Davis One Shields Avenue~…}%
+      }
+      \strng{namehash}{206798266424aa208631216f31a28d92}
+      \strng{fullhash}{206798266424aa208631216f31a28d92}
+      \strng{bibnamehash}{206798266424aa208631216f31a28d92}
+      \strng{authorbibnamehash}{206798266424aa208631216f31a28d92}
+      \strng{authornamehash}{206798266424aa208631216f31a28d92}
+      \strng{authorfullhash}{206798266424aa208631216f31a28d92}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Nonlinear discriminant analysis via scaling and ACE}
+      \field{year}{1984}
+    \endentry
+    \entry{cella1986reliability}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9c24598fffec0a177cbb51e3a2ea687d}{%
+           family={Cella},
+           familyi={C\bibinitperiod},
+           given={David\bibnamedelima F},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=604054346fbe288c17f0f59ebdd71d52}{%
+           family={Perry},
+           familyi={P\bibinitperiod},
+           given={Samuel\bibnamedelima W},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications Sage CA: Los Angeles, CA}%
+      }
+      \strng{namehash}{31f6f82a13b8b8b1c5ebac160b7e747f}
+      \strng{fullhash}{31f6f82a13b8b8b1c5ebac160b7e747f}
+      \strng{bibnamehash}{31f6f82a13b8b8b1c5ebac160b7e747f}
+      \strng{authorbibnamehash}{31f6f82a13b8b8b1c5ebac160b7e747f}
+      \strng{authornamehash}{31f6f82a13b8b8b1c5ebac160b7e747f}
+      \strng{authorfullhash}{31f6f82a13b8b8b1c5ebac160b7e747f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological reports}
+      \field{number}{2}
+      \field{title}{Reliability and concurrent validity of three visual-analogue mood scales}
+      \field{volume}{59}
+      \field{year}{1986}
+      \field{pages}{827\bibrangedash 833}
+      \range{pages}{7}
+    \endentry
+    \entry{cimprich1993development}{article}{}
+      \name{author}{1}{}{%
+        {{hash=dfce2f90752bb4e958a583d5c6bec207}{%
+           family={Cimprich},
+           familyi={C\bibinitperiod},
+           given={Bernadine},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {LWW}%
+      }
+      \strng{namehash}{dfce2f90752bb4e958a583d5c6bec207}
+      \strng{fullhash}{dfce2f90752bb4e958a583d5c6bec207}
+      \strng{bibnamehash}{dfce2f90752bb4e958a583d5c6bec207}
+      \strng{authorbibnamehash}{dfce2f90752bb4e958a583d5c6bec207}
+      \strng{authornamehash}{dfce2f90752bb4e958a583d5c6bec207}
+      \strng{authorfullhash}{dfce2f90752bb4e958a583d5c6bec207}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cancer nursing}
+      \field{number}{2}
+      \field{title}{Development of an intervention to restore attention in cancer patients}
+      \field{volume}{16}
+      \field{year}{1993}
+      \field{pages}{83\bibrangedash 92}
+      \range{pages}{10}
+    \endentry
+    \entry{cohen1994activation}{article}{}
+      \name{author}{6}{}{%
+        {{hash=74f9e2bf1a38596826af4f725fec39ed}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Jonathan\bibnamedelima D},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=d71ca6fc72cbacc67b99fbcb0be18c79}{%
+           family={Forman},
+           familyi={F\bibinitperiod},
+           given={Steven\bibnamedelima D},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=e75bb0b55f20d3e5cc1d1e2ec85860cd}{%
+           family={Braver},
+           familyi={B\bibinitperiod},
+           given={Todd\bibnamedelima S},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=7bad1aee796cfe9e578d97bac06a174f}{%
+           family={Casey},
+           familyi={C\bibinitperiod},
+           given={BJ},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4a5b381f6c4edbbdec60fce7f06ac1ae}{%
+           family={Servan-Schreiber},
+           familyi={S\bibinithyphendelim S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=aa95621c90d08e10fa24d6a12086998f}{%
+           family={Noll},
+           familyi={N\bibinitperiod},
+           given={Douglas\bibnamedelima C},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{a0081b81c31637aabd6c66b8ef3d7f11}
+      \strng{fullhash}{5869eb53b3ec8c61ff50d44842b7a197}
+      \strng{bibnamehash}{a0081b81c31637aabd6c66b8ef3d7f11}
+      \strng{authorbibnamehash}{a0081b81c31637aabd6c66b8ef3d7f11}
+      \strng{authornamehash}{a0081b81c31637aabd6c66b8ef3d7f11}
+      \strng{authorfullhash}{5869eb53b3ec8c61ff50d44842b7a197}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Human brain mapping}
+      \field{number}{4}
+      \field{title}{Activation of the prefrontal cortex in a nonspatial working memory task with functional MRI}
+      \field{volume}{1}
+      \field{year}{1994}
+      \field{pages}{293\bibrangedash 304}
+      \range{pages}{12}
+    \endentry
+    \entry{collet1997autonomic}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e9767fd54e4d6a4c96ed1a9c1e5177a1}{%
+           family={Collet},
+           familyi={C\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=828575b4bc1f6c07d76cf5971a42f54e}{%
+           family={Vernet-Maury},
+           familyi={V\bibinithyphendelim M\bibinitperiod},
+           given={Evelyne},
+           giveni={E\bibinitperiod}}}%
+        {{hash=bb39f0ddea28689256bf87e3ff9a369a}{%
+           family={Delhomme},
+           familyi={D\bibinitperiod},
+           given={Georges},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e902996f4543798356267c79ebe85c2e}{%
+           family={Dittmar},
+           familyi={D\bibinitperiod},
+           given={André},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{66257069fddfa2171653fdaa91a9faa8}
+      \strng{fullhash}{bc4a109cd1b4a3f0f6bafa71e766b867}
+      \strng{bibnamehash}{66257069fddfa2171653fdaa91a9faa8}
+      \strng{authorbibnamehash}{66257069fddfa2171653fdaa91a9faa8}
+      \strng{authornamehash}{66257069fddfa2171653fdaa91a9faa8}
+      \strng{authorfullhash}{bc4a109cd1b4a3f0f6bafa71e766b867}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the autonomic nervous system}
+      \field{number}{1-2}
+      \field{title}{Autonomic nervous system response patterns specificity to basic emotions}
+      \field{volume}{62}
+      \field{year}{1997}
+      \field{pages}{45\bibrangedash 57}
+      \range{pages}{13}
+    \endentry
+    \entry{d2018affective}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e731ec4aa63bf98b1853f4e31701d45e}{%
+           family={D’Mello},
+           familyi={D\bibinitperiod},
+           given={Sidney},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5d02d6d38602ab2b8c71e0895e42534e}{%
+           family={Kappas},
+           familyi={K\bibinitperiod},
+           given={Arvid},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c1ac197980e2f3d0189d936daae1da8b}{%
+           family={Gratch},
+           familyi={G\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Sage Publications Sage UK: London, England}%
+      }
+      \strng{namehash}{7cdc1b09ef3ca69bd8734c630266bc3b}
+      \strng{fullhash}{7cdc1b09ef3ca69bd8734c630266bc3b}
+      \strng{bibnamehash}{7cdc1b09ef3ca69bd8734c630266bc3b}
+      \strng{authorbibnamehash}{7cdc1b09ef3ca69bd8734c630266bc3b}
+      \strng{authornamehash}{7cdc1b09ef3ca69bd8734c630266bc3b}
+      \strng{authorfullhash}{7cdc1b09ef3ca69bd8734c630266bc3b}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Emotion Review}
+      \field{number}{2}
+      \field{title}{The affective computing approach to affect measurement}
+      \field{volume}{10}
+      \field{year}{2018}
+      \field{pages}{174\bibrangedash 183}
+      \range{pages}{10}
+    \endentry
+    \entry{deng2009imagenet}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=0ae7fdc13773f928525f673b05f37149}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Jia},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7d87c5957b07153c7f18918b92830bf8}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=d5670b2600fea169724521e252d9d09d}{%
+           family={Socher},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2afdae52015b97674d81efea449edce2}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Li-Jia},
+           giveni={L\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=4838f7fdd28d5cefb28f3b3c734976d4}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=cd00ce5bc45f687c432e52e0fa1a7aa6}{%
+           family={Fei-Fei},
+           familyi={F\bibinithyphendelim F\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Ieee}%
+      }
+      \strng{namehash}{990420f755e01028377fcad1464c9706}
+      \strng{fullhash}{a16fdd05c52c264b99fe98f4a5e24c60}
+      \strng{bibnamehash}{990420f755e01028377fcad1464c9706}
+      \strng{authorbibnamehash}{990420f755e01028377fcad1464c9706}
+      \strng{authornamehash}{990420f755e01028377fcad1464c9706}
+      \strng{authorfullhash}{a16fdd05c52c264b99fe98f4a5e24c60}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2009 IEEE conference on computer vision and pattern recognition}
+      \field{title}{Imagenet: A large-scale hierarchical image database}
+      \field{year}{2009}
+      \field{pages}{248\bibrangedash 255}
+      \range{pages}{8}
+    \endentry
+    \entry{ekiz2020can}{article}{}
+      \name{author}{4}{}{%
+        {{hash=36ed04595c90186fa7b3188b0cef6037}{%
+           family={Ekiz},
+           familyi={E\bibinitperiod},
+           given={Deniz},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d4f9a0f14b12cbfa0dd5e0107e408cc5}{%
+           family={Can},
+           familyi={C\bibinitperiod},
+           given={Yekta\bibnamedelima Said},
+           giveni={Y\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=d5df1050e14517e2078d1c523ceac669}{%
+           family={Dardagan},
+           familyi={D\bibinitperiod},
+           given={Yagmur\bibnamedelima Ceren},
+           giveni={Y\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=77a4da14513a6962b307154411ca1271}{%
+           family={Ersoy},
+           familyi={E\bibinitperiod},
+           given={Cem},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{54d2af2ae25cab871b27f780d8ef0586}
+      \strng{fullhash}{0f4762372d553b6854c9b6aa0fc0d7b1}
+      \strng{bibnamehash}{54d2af2ae25cab871b27f780d8ef0586}
+      \strng{authorbibnamehash}{54d2af2ae25cab871b27f780d8ef0586}
+      \strng{authornamehash}{54d2af2ae25cab871b27f780d8ef0586}
+      \strng{authorfullhash}{0f4762372d553b6854c9b6aa0fc0d7b1}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Can a smartband be used for continuous implicit authentication in real life}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{pages}{59402\bibrangedash 59411}
+      \range{pages}{10}
+    \endentry
+    \entry{farrahi2019evaluating}{article}{}
+      \name{author}{6}{}{%
+        {{hash=432878badb23552c6d334ba94325c60a}{%
+           family={Farrahi},
+           familyi={F\bibinitperiod},
+           given={Vahid},
+           giveni={V\bibinitperiod}}}%
+        {{hash=eb56dcb74677af4d2cb0a0ab09a06870}{%
+           family={Niemelä},
+           familyi={N\bibinitperiod},
+           given={Maisa},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1702dfeec5bdd1d218d5d65742369a76}{%
+           family={Tjurin},
+           familyi={T\bibinitperiod},
+           given={Petra},
+           giveni={P\bibinitperiod}}}%
+        {{hash=65944530c8a83aa7c64a74a69f984e9c}{%
+           family={Kangas},
+           familyi={K\bibinitperiod},
+           given={Maarit},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d13b77feb517ae3deddb13a2c4be1e54}{%
+           family={Korpelainen},
+           familyi={K\bibinitperiod},
+           given={Raija},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2350646c9a6bb8e982f3b307adbda2ca}{%
+           family={Jämsä},
+           familyi={J\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{2db4b0da2cfc8841cb7b3e2decdf3f60}
+      \strng{fullhash}{46ce55f35c7798ae5745d06ed9dde970}
+      \strng{bibnamehash}{2db4b0da2cfc8841cb7b3e2decdf3f60}
+      \strng{authorbibnamehash}{2db4b0da2cfc8841cb7b3e2decdf3f60}
+      \strng{authornamehash}{2db4b0da2cfc8841cb7b3e2decdf3f60}
+      \strng{authorfullhash}{46ce55f35c7798ae5745d06ed9dde970}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE journal of biomedical and health informatics}
+      \field{number}{1}
+      \field{title}{Evaluating and enhancing the generalization performance of machine learning models for physical activity intensity prediction from raw acceleration data}
+      \field{volume}{24}
+      \field{year}{2019}
+      \field{pages}{27\bibrangedash 38}
+      \range{pages}{12}
+    \endentry
+    \entry{foll2021flirt}{article}{}
+      \name{author}{8}{}{%
+        {{hash=db25606a084ab2c048c0a4ab690d71b9}{%
+           family={Föll},
+           familyi={F\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b08dcbeda9c1f6d5262509d03a45d0cb}{%
+           family={Maritsch},
+           familyi={M\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dc9787cc9e80c4f749c05c79f77b3539}{%
+           family={Spinola},
+           familyi={S\bibinitperiod},
+           given={Federica},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0c699939abde863d7b472b24891f896d}{%
+           family={Mishra},
+           familyi={M\bibinitperiod},
+           given={Varun},
+           giveni={V\bibinitperiod}}}%
+        {{hash=313813e40d2b3a2029c516235a1de0af}{%
+           family={Barata},
+           familyi={B\bibinitperiod},
+           given={Filipe},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0cfdd34b311e6e8f2883f1d69a3ccde7}{%
+           family={Kowatsch},
+           familyi={K\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e54935551ada74d38599fc2a0ea49aa6}{%
+           family={Fleisch},
+           familyi={F\bibinitperiod},
+           given={Elgar},
+           giveni={E\bibinitperiod}}}%
+        {{hash=fd9a8756e8a15d6611917de492d210dc}{%
+           family={Wortmann},
+           familyi={W\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{286775e334a444bb396d3298c0ca4d83}
+      \strng{fullhash}{44bc5a0d9343c63c84d82cf97429f06b}
+      \strng{bibnamehash}{286775e334a444bb396d3298c0ca4d83}
+      \strng{authorbibnamehash}{286775e334a444bb396d3298c0ca4d83}
+      \strng{authornamehash}{286775e334a444bb396d3298c0ca4d83}
+      \strng{authorfullhash}{44bc5a0d9343c63c84d82cf97429f06b}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer Methods and Programs in Biomedicine}
+      \field{title}{FLIRT: A feature generation toolkit for wearable data}
+      \field{volume}{212}
+      \field{year}{2021}
+      \field{pages}{106461}
+      \range{pages}{1}
+    \endentry
+    \entry{gjoreski2020datasets}{article}{}
+      \name{author}{7}{}{%
+        {{hash=782b04e7fec0a5d0e032215e638aa8ed}{%
+           family={Gjoreski},
+           familyi={G\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ee69ef1f2d61974473271d138fa16a65}{%
+           family={Kolenik},
+           familyi={K\bibinitperiod},
+           given={Tine},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b741e348caecb56e16cda8e550925c55}{%
+           family={Knez},
+           familyi={K\bibinitperiod},
+           given={Timotej},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7fd3c350498e1d5b04fe2a60fd12e262}{%
+           family={Luštrek},
+           familyi={L\bibinitperiod},
+           given={Mitja},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cc505e5be6b49e0d18726340a532972e}{%
+           family={Gams},
+           familyi={G\bibinitperiod},
+           given={Matjaž},
+           giveni={M\bibinitperiod}}}%
+        {{hash=19e0ae7296e7752a523a39ad50eb038d}{%
+           family={Gjoreski},
+           familyi={G\bibinitperiod},
+           given={Hristijan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3be1d9f471709f36f1cd054d1de5ae35}{%
+           family={Pejović},
+           familyi={P\bibinitperiod},
+           given={Veljko},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{22d7e674550108ed52ee66809b057123}
+      \strng{fullhash}{56bba162357f87c1c7574daf4db39259}
+      \strng{bibnamehash}{22d7e674550108ed52ee66809b057123}
+      \strng{authorbibnamehash}{22d7e674550108ed52ee66809b057123}
+      \strng{authornamehash}{22d7e674550108ed52ee66809b057123}
+      \strng{authorfullhash}{56bba162357f87c1c7574daf4db39259}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Sciences}
+      \field{number}{11}
+      \field{title}{Datasets for cognitive load inference using wearable sensors and psychological traits}
+      \field{volume}{10}
+      \field{year}{2020}
+      \field{pages}{3843}
+      \range{pages}{1}
+    \endentry
+    \entry{goodwin2019predicting}{article}{}
+      \name{author}{5}{}{%
+        {{hash=35e14d0524022b8532185172cabf6245}{%
+           family={Goodwin},
+           familyi={G\bibinitperiod},
+           given={Matthew\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=97cb02c277598feb7a3c942d17b7ea78}{%
+           family={Mazefsky},
+           familyi={M\bibinitperiod},
+           given={Carla\bibnamedelima A},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c2a710ab536af432287fd4b2afc7f8cb}{%
+           family={Ioannidis},
+           familyi={I\bibinitperiod},
+           given={Stratis},
+           giveni={S\bibinitperiod}}}%
+        {{hash=88df101dcbd0faa5b685fac54cc30144}{%
+           family={Erdogmus},
+           familyi={E\bibinitperiod},
+           given={Deniz},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f4c3f6bf1964eb3da9223cd590546b8e}{%
+           family={Siegel},
+           familyi={S\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{5cbaf5757b4064752bbb3eb38167ed5f}
+      \strng{fullhash}{f9ac1db191a3cad7794545e125a96f94}
+      \strng{bibnamehash}{5cbaf5757b4064752bbb3eb38167ed5f}
+      \strng{authorbibnamehash}{5cbaf5757b4064752bbb3eb38167ed5f}
+      \strng{authornamehash}{5cbaf5757b4064752bbb3eb38167ed5f}
+      \strng{authorfullhash}{f9ac1db191a3cad7794545e125a96f94}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Autism research}
+      \field{number}{8}
+      \field{title}{Predicting aggression to others in youth with autism using a wearable biosensor}
+      \field{volume}{12}
+      \field{year}{2019}
+      \field{pages}{1286\bibrangedash 1296}
+      \range{pages}{11}
+    \endentry
+    \entry{greco2015cvxeda}{article}{}
+      \name{author}{5}{}{%
+        {{hash=f952b3095ba9732293f2c6f73ce517c2}{%
+           family={Greco},
+           familyi={G\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=40681c768557391b81d9895cf82f6cb3}{%
+           family={Valenza},
+           familyi={V\bibinitperiod},
+           given={Gaetano},
+           giveni={G\bibinitperiod}}}%
+        {{hash=eba447e8f35c2af1401ba4ee3dfbc33e}{%
+           family={Lanata},
+           familyi={L\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=00fd019e7c1cd198227276edcabc3848}{%
+           family={Scilingo},
+           familyi={S\bibinitperiod},
+           given={Enzo\bibnamedelima Pasquale},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=a37819d4cafbbe627d41ed452a0cb97b}{%
+           family={Citi},
+           familyi={C\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{158df5574cf00610530ea6e07a46dc2a}
+      \strng{fullhash}{a30d9e752dd61307c1e701e390b5d509}
+      \strng{bibnamehash}{158df5574cf00610530ea6e07a46dc2a}
+      \strng{authorbibnamehash}{158df5574cf00610530ea6e07a46dc2a}
+      \strng{authornamehash}{158df5574cf00610530ea6e07a46dc2a}
+      \strng{authorfullhash}{a30d9e752dd61307c1e701e390b5d509}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE transactions on biomedical engineering}
+      \field{number}{4}
+      \field{title}{cvxEDA: A convex optimization approach to electrodermal activity processing}
+      \field{volume}{63}
+      \field{year}{2015}
+      \field{pages}{797\bibrangedash 804}
+      \range{pages}{8}
+    \endentry
+    \entry{handlin2011short}{article}{}
+      \name{author}{6}{}{%
+        {{hash=8ea733f32b63240da614b68197382160}{%
+           family={Handlin},
+           familyi={H\bibinitperiod},
+           given={Linda},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1dfcb7751d1abc9f38dbb6ba0aefefad}{%
+           family={Hydbring-Sandberg},
+           familyi={H\bibinithyphendelim S\bibinitperiod},
+           given={Eva},
+           giveni={E\bibinitperiod}}}%
+        {{hash=10272657065b6bdd376cb4bb80c37fa3}{%
+           family={Nilsson},
+           familyi={N\bibinitperiod},
+           given={Anne},
+           giveni={A\bibinitperiod}}}%
+        {{hash=502c42b23e0fcd09f2fc812fa0b39de5}{%
+           family={Ejdebäck},
+           familyi={E\bibinitperiod},
+           given={Mikael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=41ad6b0a7b4cd250aca29418ed3a856e}{%
+           family={Jansson},
+           familyi={J\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0e458a3f806eff360395c8db5823567b}{%
+           family={Uvnäs-Moberg},
+           familyi={U\bibinithyphendelim M\bibinitperiod},
+           given={Kerstin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{bfbbbb870e234ef6c390f5f0764ad323}
+      \strng{fullhash}{1c05a985939571ccb71fde974be18144}
+      \strng{bibnamehash}{bfbbbb870e234ef6c390f5f0764ad323}
+      \strng{authorbibnamehash}{bfbbbb870e234ef6c390f5f0764ad323}
+      \strng{authornamehash}{bfbbbb870e234ef6c390f5f0764ad323}
+      \strng{authorfullhash}{1c05a985939571ccb71fde974be18144}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Anthrozoös}
+      \field{number}{3}
+      \field{title}{Short-term interaction between dogs and their owners: effects on oxytocin, cortisol, insulin and heart rate—an exploratory study}
+      \field{volume}{24}
+      \field{year}{2011}
+      \field{pages}{301\bibrangedash 315}
+      \range{pages}{15}
+    \endentry
+    \entry{hastie2009elements}{book}{}
+      \name{author}{4}{}{%
+        {{hash=0cb8fe4210baa81c4b0e67913b4d2768}{%
+           family={Hastie},
+           familyi={H\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod}}}%
+        {{hash=88eea600247d798f8b2ce0b2dc614492}{%
+           family={Tibshirani},
+           familyi={T\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ce884cc144616c39e723a8fe2eb3c879}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Jerome\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=ce884cc144616c39e723a8fe2eb3c879}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Jerome\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{45eb7d473651da447f1d77717e7f8650}
+      \strng{fullhash}{128c322c499b8780d79e31a8740aac52}
+      \strng{bibnamehash}{45eb7d473651da447f1d77717e7f8650}
+      \strng{authorbibnamehash}{45eb7d473651da447f1d77717e7f8650}
+      \strng{authornamehash}{45eb7d473651da447f1d77717e7f8650}
+      \strng{authorfullhash}{128c322c499b8780d79e31a8740aac52}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The elements of statistical learning: data mining, inference, and prediction}
+      \field{volume}{2}
+      \field{year}{2009}
+    \endentry
+    \entry{healey2005detecting}{article}{}
+      \name{author}{2}{}{%
+        {{hash=94ec11dffb4363f4283dc9b7752296b8}{%
+           family={Healey},
+           familyi={H\bibinitperiod},
+           given={Jennifer\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=7dd0cb6b02efa214ad5f10a28d1241b6}{%
+           family={Picard},
+           familyi={P\bibinitperiod},
+           given={Rosalind\bibnamedelima W},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{99a6fbf0ca31086b401def7b71c1e0cf}
+      \strng{fullhash}{99a6fbf0ca31086b401def7b71c1e0cf}
+      \strng{bibnamehash}{99a6fbf0ca31086b401def7b71c1e0cf}
+      \strng{authorbibnamehash}{99a6fbf0ca31086b401def7b71c1e0cf}
+      \strng{authornamehash}{99a6fbf0ca31086b401def7b71c1e0cf}
+      \strng{authorfullhash}{99a6fbf0ca31086b401def7b71c1e0cf}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on intelligent transportation systems}
+      \field{number}{2}
+      \field{title}{Detecting stress during real-world driving tasks using physiological sensors}
+      \field{volume}{6}
+      \field{year}{2005}
+      \field{pages}{156\bibrangedash 166}
+      \range{pages}{11}
+    \endentry
+    \entry{hinton1990connectionist}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=813bd95fe553e6079cd53a567b238287}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey\bibnamedelima E},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{813bd95fe553e6079cd53a567b238287}
+      \strng{fullhash}{813bd95fe553e6079cd53a567b238287}
+      \strng{bibnamehash}{813bd95fe553e6079cd53a567b238287}
+      \strng{authorbibnamehash}{813bd95fe553e6079cd53a567b238287}
+      \strng{authornamehash}{813bd95fe553e6079cd53a567b238287}
+      \strng{authorfullhash}{813bd95fe553e6079cd53a567b238287}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Machine learning}
+      \field{title}{Connectionist learning procedures}
+      \field{year}{1990}
+      \field{pages}{555\bibrangedash 610}
+      \range{pages}{56}
+    \endentry
+    \entry{hosseini2022multimodal}{article}{}
+      \name{author}{7}{}{%
+        {{hash=cc8538a29262d28245c4f07100f57370}{%
+           family={Hosseini},
+           familyi={H\bibinitperiod},
+           given={Seyedmajid},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8622ea81ad2c52f84caeb45d0b020e97}{%
+           family={Gottumukkala},
+           familyi={G\bibinitperiod},
+           given={Raju},
+           giveni={R\bibinitperiod}}}%
+        {{hash=756bf4c0df47f65de5b2e134da36c88f}{%
+           family={Katragadda},
+           familyi={K\bibinitperiod},
+           given={Satya},
+           giveni={S\bibinitperiod}}}%
+        {{hash=57167a6a1cfa6aba3bc115aa6659d43c}{%
+           family={Bhupatiraju},
+           familyi={B\bibinitperiod},
+           given={Ravi\bibnamedelima Teja},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=64e825874f8adeaa209567bb22ea89fa}{%
+           family={Ashkar},
+           familyi={A\bibinitperiod},
+           given={Ziad},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=ff383bd1642ebdc1050941dd9d9a70f4}{%
+           family={Borst},
+           familyi={B\bibinitperiod},
+           given={Christoph\bibnamedelima W},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=d66b3b9561f17407e2f52b3f48348533}{%
+           family={Cochran},
+           familyi={C\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{974760996bfd4d678a558b76f927a636}
+      \strng{fullhash}{307cab16df01eeb3ee736a88141c7711}
+      \strng{bibnamehash}{974760996bfd4d678a558b76f927a636}
+      \strng{authorbibnamehash}{974760996bfd4d678a558b76f927a636}
+      \strng{authornamehash}{974760996bfd4d678a558b76f927a636}
+      \strng{authorfullhash}{307cab16df01eeb3ee736a88141c7711}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientific Data}
+      \field{number}{1}
+      \field{title}{A multimodal sensor dataset for continuous stress detection of nurses in a hospital}
+      \field{volume}{9}
+      \field{year}{2022}
+      \field{pages}{255}
+      \range{pages}{1}
+    \endentry
+    \entry{karthikeyan2012descriptive}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5fb0d552ecd9fea32c516fc9d05030dc}{%
+           family={Karthikeyan},
+           familyi={K\bibinitperiod},
+           given={Palanisamy},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c69f9312e04aa3468c601eda508c14cb}{%
+           family={Murugappan},
+           familyi={M\bibinitperiod},
+           given={Murugappan},
+           giveni={M\bibinitperiod}}}%
+        {{hash=302295339aaec93288b59e1b4cdc84cc}{%
+           family={Yaacob},
+           familyi={Y\bibinitperiod},
+           given={Sazali},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Society of Physical Therapy Science}%
+      }
+      \strng{namehash}{fa51d351db2971335cc0985bba81561f}
+      \strng{fullhash}{fa51d351db2971335cc0985bba81561f}
+      \strng{bibnamehash}{fa51d351db2971335cc0985bba81561f}
+      \strng{authorbibnamehash}{fa51d351db2971335cc0985bba81561f}
+      \strng{authornamehash}{fa51d351db2971335cc0985bba81561f}
+      \strng{authorfullhash}{fa51d351db2971335cc0985bba81561f}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Physical Therapy Science}
+      \field{number}{12}
+      \field{title}{Descriptive analysis of skin temperature variability of sympathetic nervous system activity in stress}
+      \field{volume}{24}
+      \field{year}{2012}
+      \field{pages}{1341\bibrangedash 1344}
+      \range{pages}{4}
+    \endentry
+    \entry{kingma2014adam}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b6fbd171848aad4edf3925543f1f1522}{%
+           family={Kingma},
+           familyi={K\bibinitperiod},
+           given={Diederik\bibnamedelima P},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=8aa66e8231cc2fdbe67aa4f18ca970c6}{%
+           family={Ba},
+           familyi={B\bibinitperiod},
+           given={Jimmy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{fullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{bibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorbibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authornamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorfullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1412.6980}
+      \field{title}{Adam: A method for stochastic optimization}
+      \field{year}{2014}
+    \endentry
+    \entry{kreibig2010autonomic}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c6438c62d95e4a8ece7d7b4ba0bb9b7c}{%
+           family={Kreibig},
+           familyi={K\bibinitperiod},
+           given={Sylvia\bibnamedelima D},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{c6438c62d95e4a8ece7d7b4ba0bb9b7c}
+      \strng{fullhash}{c6438c62d95e4a8ece7d7b4ba0bb9b7c}
+      \strng{bibnamehash}{c6438c62d95e4a8ece7d7b4ba0bb9b7c}
+      \strng{authorbibnamehash}{c6438c62d95e4a8ece7d7b4ba0bb9b7c}
+      \strng{authornamehash}{c6438c62d95e4a8ece7d7b4ba0bb9b7c}
+      \strng{authorfullhash}{c6438c62d95e4a8ece7d7b4ba0bb9b7c}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biological psychology}
+      \field{number}{3}
+      \field{title}{Autonomic nervous system activity in emotion: A review}
+      \field{volume}{84}
+      \field{year}{2010}
+      \field{pages}{394\bibrangedash 421}
+      \range{pages}{28}
+    \endentry
+    \entry{li2006reduction}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f495cdda14989886bcfdb65c02b7a19d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=fc6b7b1c9927e80b1d7fb5dbea806470}{%
+           family={Doi},
+           familyi={D\bibinitperiod},
+           given={Kunio},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{5d6a9f1ee322f5342dfb8a39a54c09e8}
+      \strng{fullhash}{5d6a9f1ee322f5342dfb8a39a54c09e8}
+      \strng{bibnamehash}{5d6a9f1ee322f5342dfb8a39a54c09e8}
+      \strng{authorbibnamehash}{5d6a9f1ee322f5342dfb8a39a54c09e8}
+      \strng{authornamehash}{5d6a9f1ee322f5342dfb8a39a54c09e8}
+      \strng{authorfullhash}{5d6a9f1ee322f5342dfb8a39a54c09e8}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medical physics}
+      \field{number}{4}
+      \field{title}{Reduction of bias and variance for evaluation of computer-aided diagnostic schemes}
+      \field{volume}{33}
+      \field{year}{2006}
+      \field{pages}{868\bibrangedash 875}
+      \range{pages}{8}
+    \endentry
+    \entry{mac2002problem}{article}{}
+      \name{author}{4}{}{%
+        {{hash=25c424c879d61ab618b2f3ac3879a012}{%
+           family={Mac\bibnamedelima Namee},
+           familyi={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=473cbefdfad5417120c3c0880a06e90a}{%
+           family={Cunningham},
+           familyi={C\bibinitperiod},
+           given={Padraig},
+           giveni={P\bibinitperiod}}}%
+        {{hash=767cf9d3c39891f9d1f3a78e7cf4fe10}{%
+           family={Byrne},
+           familyi={B\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fdb039cc8e305e4e753c7de5dea1e480}{%
+           family={Corrigan},
+           familyi={C\bibinitperiod},
+           given={Owen\bibnamedelima I},
+           giveni={O\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{fe81f1ebc318135ccc1750e7c18c92ab}
+      \strng{fullhash}{b14dba7b6c335be9d8c1fbd14c4d4b4a}
+      \strng{bibnamehash}{fe81f1ebc318135ccc1750e7c18c92ab}
+      \strng{authorbibnamehash}{fe81f1ebc318135ccc1750e7c18c92ab}
+      \strng{authornamehash}{fe81f1ebc318135ccc1750e7c18c92ab}
+      \strng{authorfullhash}{b14dba7b6c335be9d8c1fbd14c4d4b4a}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Artificial intelligence in medicine}
+      \field{number}{1}
+      \field{title}{The problem of bias in training data in regression problems in medical decision support}
+      \field{volume}{24}
+      \field{year}{2002}
+      \field{pages}{51\bibrangedash 70}
+      \range{pages}{20}
+    \endentry
+    \entry{mcevoy1999connection}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a95bea864495e6db4dc0b333b07bc2e0}{%
+           family={McEvoy},
+           familyi={M\bibinitperiod},
+           given={Cathy\bibnamedelima L},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=c7ecd6198187ecfb2b06fa78a6f5389d}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Douglas\bibnamedelima L},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=8673b278b8ad938841ba22303b5e3027}{%
+           family={Komatsu},
+           familyi={K\bibinitperiod},
+           given={Takako},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Psychological Association}%
+      }
+      \strng{namehash}{2cec391095157c7d04ca1fd03890de1b}
+      \strng{fullhash}{2cec391095157c7d04ca1fd03890de1b}
+      \strng{bibnamehash}{2cec391095157c7d04ca1fd03890de1b}
+      \strng{authorbibnamehash}{2cec391095157c7d04ca1fd03890de1b}
+      \strng{authornamehash}{2cec391095157c7d04ca1fd03890de1b}
+      \strng{authorfullhash}{2cec391095157c7d04ca1fd03890de1b}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory, and Cognition}
+      \field{number}{5}
+      \field{title}{What is the connection between true and false memories? The differential roles of interitem associations in recall and recognition.}
+      \field{volume}{25}
+      \field{year}{1999}
+      \field{pages}{1177}
+      \range{pages}{1}
+    \endentry
+    \entry{orbach1963reversibility}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b989433f9e807fa46fccca3c08e773f8}{%
+           family={Orbach},
+           familyi={O\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=78e5e89d37a4ea5d211e90a8c330d25d}{%
+           family={Ehrlich},
+           familyi={E\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=30110708c46e84fb0595002c6a5fd76a}{%
+           family={Heath},
+           familyi={H\bibinitperiod},
+           given={Helen\bibnamedelima A},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications Sage CA: Los Angeles, CA}%
+      }
+      \strng{namehash}{8d98bc74b0ae3d18663acd201fdb4f8f}
+      \strng{fullhash}{8d98bc74b0ae3d18663acd201fdb4f8f}
+      \strng{bibnamehash}{8d98bc74b0ae3d18663acd201fdb4f8f}
+      \strng{authorbibnamehash}{8d98bc74b0ae3d18663acd201fdb4f8f}
+      \strng{authornamehash}{8d98bc74b0ae3d18663acd201fdb4f8f}
+      \strng{authorfullhash}{8d98bc74b0ae3d18663acd201fdb4f8f}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Perceptual and motor skills}
+      \field{number}{2}
+      \field{title}{Reversibility of the Necker cube: I. An examination of the concept of “satiation of orientation”}
+      \field{volume}{17}
+      \field{year}{1963}
+      \field{pages}{439\bibrangedash 458}
+      \range{pages}{20}
+    \endentry
+    \entry{pedregosa2011scikit}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=bab4e5caee2d67831e464ce575022b37}{%
+           family={Pedregosa},
+           familyi={P\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=cfa3239dded54488f9a82a5718d5b927}{%
+           family={Varoquaux},
+           familyi={V\bibinitperiod},
+           given={Gaël},
+           giveni={G\bibinitperiod}}}%
+        {{hash=12ebe424e1c87de156c57e8fa7683f46}{%
+           family={Gramfort},
+           familyi={G\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=504ea1986689f1047a6f0beda2cb3822}{%
+           family={Michel},
+           familyi={M\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=0f3fc06fb9fcbb01b9cc0985eaf0a71c}{%
+           family={Thirion},
+           familyi={T\bibinitperiod},
+           given={Bertrand},
+           giveni={B\bibinitperiod}}}%
+        {{hash=721be0317527f44db425f7a97dcab15e}{%
+           family={Grisel},
+           familyi={G\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+        {{hash=d3b6c8582cea4e8b6576137b6a72cadc}{%
+           family={Blondel},
+           familyi={B\bibinitperiod},
+           given={Mathieu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=86e647e5c801f3ce733927f75f029463}{%
+           family={Prettenhofer},
+           familyi={P\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=89d698773eaf2fae761ff0008031c7be}{%
+           family={Weiss},
+           familyi={W\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b255e99d411f28c789a231829f765c64}{%
+           family={Dubourg},
+           familyi={D\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {JMLR. org}%
+      }
+      \strng{namehash}{9ec95d747bac3417f92265a9a44f8bb4}
+      \strng{fullhash}{9c0daf119a88f60278a791d01ffdd5ec}
+      \strng{bibnamehash}{9ec95d747bac3417f92265a9a44f8bb4}
+      \strng{authorbibnamehash}{9ec95d747bac3417f92265a9a44f8bb4}
+      \strng{authornamehash}{9ec95d747bac3417f92265a9a44f8bb4}
+      \strng{authorfullhash}{9c0daf119a88f60278a791d01ffdd5ec}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{the Journal of machine Learning research}
+      \field{title}{Scikit-learn: Machine learning in Python}
+      \field{volume}{12}
+      \field{year}{2011}
+      \field{pages}{2825\bibrangedash 2830}
+      \range{pages}{6}
+    \endentry
+    \entry{peirce2019psychopy2}{article}{}
+      \name{author}{8}{}{%
+        {{hash=f2e4ce272b4ea0700e7efe8ff3cf8f34}{%
+           family={Peirce},
+           familyi={P\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a15a04a473b8bb5f754722fc04c8e408}{%
+           family={Gray},
+           familyi={G\bibinitperiod},
+           given={Jeremy\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=693bf13408fccc3c446a33dac9ad35c5}{%
+           family={Simpson},
+           familyi={S\bibinitperiod},
+           given={Sol},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9e37b250da187ee820cc4fca78ef61c9}{%
+           family={MacAskill},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bae96ab1c1a55e1e9e83948109508857}{%
+           family={Höchenberger},
+           familyi={H\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8faaf4d6bb5eedc495a92ec28d3609ab}{%
+           family={Sogo},
+           familyi={S\bibinitperiod},
+           given={Hiroyuki},
+           giveni={H\bibinitperiod}}}%
+        {{hash=15ea00e86864b07ebb5c463db9664b35}{%
+           family={Kastman},
+           familyi={K\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=afcf8214ddcc7a7545319db05af0a19a}{%
+           family={Lindel{ø}v},
+           familyi={L\bibinitperiod},
+           given={Jonas\bibnamedelima Kristoffer},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4cbe73db80033e25adda6fc935a5dd03}
+      \strng{fullhash}{4aff3326ecf56239a206e56b2dc1199a}
+      \strng{bibnamehash}{4cbe73db80033e25adda6fc935a5dd03}
+      \strng{authorbibnamehash}{4cbe73db80033e25adda6fc935a5dd03}
+      \strng{authornamehash}{4cbe73db80033e25adda6fc935a5dd03}
+      \strng{authorfullhash}{4aff3326ecf56239a206e56b2dc1199a}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Behavior research methods}
+      \field{title}{PsychoPy2: Experiments in behavior made easy}
+      \field{volume}{51}
+      \field{year}{2019}
+      \field{pages}{195\bibrangedash 203}
+      \range{pages}{9}
+    \endentry
+    \entry{phippsassessing}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9e5d01552f3bf5502c0ff43459385a5d}{%
+           family={Phipps},
+           familyi={P\bibinitperiod},
+           given={Laura\bibnamedelima E},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=cd678c54c292d712deb4c2ffa848dc85}{%
+           family={Arce},
+           familyi={A\bibinitperiod},
+           given={Walker\bibnamedelima S},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=1f28836553e9f7e2e57f5aea55f9e8fa}{%
+           family={Walker},
+           familyi={W\bibinitperiod},
+           given={Seth\bibnamedelima G},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=1b9e1fc70b551e1b6851cab62378395c}{%
+           family={Gehringer},
+           familyi={G\bibinitperiod},
+           given={James\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{419cb2b3ab6d10331270a891291bb391}
+      \strng{fullhash}{09f2dce48aaa4a92ce48d32263252aec}
+      \strng{bibnamehash}{419cb2b3ab6d10331270a891291bb391}
+      \strng{authorbibnamehash}{419cb2b3ab6d10331270a891291bb391}
+      \strng{authornamehash}{419cb2b3ab6d10331270a891291bb391}
+      \strng{authorfullhash}{09f2dce48aaa4a92ce48d32263252aec}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mental Health Science}
+      \field{title}{Assessing physiological arousal and emotional valence during behavioral intervention for pediatric feeding difficulties: A pilot study}
+      \field{year}{2024}
+      \field{pages}{e74}
+      \range{pages}{-1}
+    \endentry
+    \entry{picard2000affective}{book}{}
+      \name{author}{1}{}{%
+        {{hash=7dd0cb6b02efa214ad5f10a28d1241b6}{%
+           family={Picard},
+           familyi={P\bibinitperiod},
+           given={Rosalind\bibnamedelima W},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MIT press}%
+      }
+      \strng{namehash}{7dd0cb6b02efa214ad5f10a28d1241b6}
+      \strng{fullhash}{7dd0cb6b02efa214ad5f10a28d1241b6}
+      \strng{bibnamehash}{7dd0cb6b02efa214ad5f10a28d1241b6}
+      \strng{authorbibnamehash}{7dd0cb6b02efa214ad5f10a28d1241b6}
+      \strng{authornamehash}{7dd0cb6b02efa214ad5f10a28d1241b6}
+      \strng{authorfullhash}{7dd0cb6b02efa214ad5f10a28d1241b6}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Affective computing}
+      \field{year}{2000}
+    \endentry
+    \entry{poh2010wearable}{article}{}
+      \name{author}{3}{}{%
+        {{hash=800b3c3ed0ab310cd62cb571e6eeeb13}{%
+           family={Poh},
+           familyi={P\bibinitperiod},
+           given={Ming-Zher},
+           giveni={M\bibinithyphendelim Z\bibinitperiod}}}%
+        {{hash=91b107bae86779ff6532eaaa5b17f891}{%
+           family={Swenson},
+           familyi={S\bibinitperiod},
+           given={Nicholas\bibnamedelima C},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=7dd0cb6b02efa214ad5f10a28d1241b6}{%
+           family={Picard},
+           familyi={P\bibinitperiod},
+           given={Rosalind\bibnamedelima W},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c93fc6f010806a011beee078ec0d13ef}
+      \strng{fullhash}{c93fc6f010806a011beee078ec0d13ef}
+      \strng{bibnamehash}{c93fc6f010806a011beee078ec0d13ef}
+      \strng{authorbibnamehash}{c93fc6f010806a011beee078ec0d13ef}
+      \strng{authornamehash}{c93fc6f010806a011beee078ec0d13ef}
+      \strng{authorfullhash}{c93fc6f010806a011beee078ec0d13ef}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE transactions on Biomedical engineering}
+      \field{number}{5}
+      \field{title}{A wearable sensor for unobtrusive, long-term assessment of electrodermal activity}
+      \field{volume}{57}
+      \field{year}{2010}
+      \field{pages}{1243\bibrangedash 1252}
+      \range{pages}{10}
+    \endentry
+    \entry{society2012publication}{article}{}
+      \name{author}{8}{}{%
+        {{hash=d3e171d193dc4f32710aaa50517618c4}{%
+           family={Psychophysiological\bibnamedelimb Research\bibnamedelimb Ad\bibnamedelimb Hoc\bibnamedelimb Committee\bibnamedelimb on\bibnamedelimb Electrodermal\bibnamedelima Measures},
+           familyi={P\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Society},
+           giveni={S\bibinitperiod},
+           prefix={for},
+           prefixi={f\bibinitperiod}}}%
+        {{hash=4e558bf0fe9cd1b7b973fade0ea74f0f}{%
+           family={Boucsein},
+           familyi={B\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+        {{hash=fa76141a1d2916e227c389998a46e3d5}{%
+           family={Fowles},
+           familyi={F\bibinitperiod},
+           given={Don\bibnamedelima C},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=7ff95efdf9c55d64585abe79bda1b52b}{%
+           family={Grimnes},
+           familyi={G\bibinitperiod},
+           given={Sverre},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f62ec68e454039364f5077279fc2f5ba}{%
+           family={Ben-Shakhar},
+           familyi={B\bibinithyphendelim S\bibinitperiod},
+           given={Gershon},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0227cae4771a3ff17fb60b0c02c18f48}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Walton\bibnamedelima T},
+           giveni={W\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=153d7bf1b504c98922068fa29930f7af}{%
+           family={Dawson},
+           familyi={D\bibinitperiod},
+           given={Michael\bibnamedelima E},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=a20c3193adb9a63486f32c54e9ed8102}{%
+           family={Filion},
+           familyi={F\bibinitperiod},
+           given={Diane\bibnamedelima L},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{3feb2f3bfaf1053696c0b58a26fa9e6c}
+      \strng{fullhash}{5467ad14e4aa47be155553a8cffef928}
+      \strng{bibnamehash}{3feb2f3bfaf1053696c0b58a26fa9e6c}
+      \strng{authorbibnamehash}{3feb2f3bfaf1053696c0b58a26fa9e6c}
+      \strng{authornamehash}{3feb2f3bfaf1053696c0b58a26fa9e6c}
+      \strng{authorfullhash}{5467ad14e4aa47be155553a8cffef928}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychophysiology}
+      \field{number}{8}
+      \field{title}{Publication recommendations for electrodermal measurements}
+      \field{volume}{49}
+      \field{year}{2012}
+      \field{pages}{1017\bibrangedash 1034}
+      \range{pages}{18}
+    \endentry
+    \entry{ravi2005activity}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=7513672993e5dec76fe9172133f64506}{%
+           family={Ravi},
+           familyi={R\bibinitperiod},
+           given={Nishkam},
+           giveni={N\bibinitperiod}}}%
+        {{hash=ef181c035837333ef40b1446c2a7a1bc}{%
+           family={Dandekar},
+           familyi={D\bibinitperiod},
+           given={Nikhil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=842ecbbead68c4a3bdf14b69fd078d3f}{%
+           family={Mysore},
+           familyi={M\bibinitperiod},
+           given={Preetham},
+           giveni={P\bibinitperiod}}}%
+        {{hash=211e529e9f10ad1bfacff2284da10ea7}{%
+           family={Littman},
+           familyi={L\bibinitperiod},
+           given={Michael\bibnamedelima L},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Pittsburgh, PA}%
+      }
+      \strng{namehash}{af04e889654df8e1a9ec84af3f0ffae2}
+      \strng{fullhash}{7fb242d9c534c86b04952af0ae762a11}
+      \strng{bibnamehash}{af04e889654df8e1a9ec84af3f0ffae2}
+      \strng{authorbibnamehash}{af04e889654df8e1a9ec84af3f0ffae2}
+      \strng{authornamehash}{af04e889654df8e1a9ec84af3f0ffae2}
+      \strng{authorfullhash}{7fb242d9c534c86b04952af0ae762a11}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Aaai}
+      \field{title}{Activity recognition from accelerometer data}
+      \field{volume}{5}
+      \field{year}{2005}
+      \field{pages}{1541\bibrangedash 1546}
+      \range{pages}{6}
+    \endentry
+    \entry{rich2007effects}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=1bafa8e7ad0417ddbeb5afae42afa8ce}{%
+           family={Rich},
+           familyi={R\bibinitperiod},
+           given={Debra\bibnamedelima Lynn},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Cornell University}%
+      }
+      \strng{namehash}{1bafa8e7ad0417ddbeb5afae42afa8ce}
+      \strng{fullhash}{1bafa8e7ad0417ddbeb5afae42afa8ce}
+      \strng{bibnamehash}{1bafa8e7ad0417ddbeb5afae42afa8ce}
+      \strng{authorbibnamehash}{1bafa8e7ad0417ddbeb5afae42afa8ce}
+      \strng{authornamehash}{1bafa8e7ad0417ddbeb5afae42afa8ce}
+      \strng{authorfullhash}{1bafa8e7ad0417ddbeb5afae42afa8ce}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Effects of exposure to nature and plants on cognition and mood: A cognitive psychology perspective}
+      \field{type}{phdthesis}
+      \field{year}{2007}
+    \endentry
+    \entry{roediger1995creating}{article}{}
+      \name{author}{2}{}{%
+        {{hash=003577404f9c429e11867e6f0dac09aa}{%
+           family={Roediger},
+           familyi={R\bibinitperiod},
+           given={Henry\bibnamedelima L},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=91569f2b4fef290deb86f6422fd6d011}{%
+           family={McDermott},
+           familyi={M\bibinitperiod},
+           given={Kathleen\bibnamedelima B},
+           giveni={K\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Psychological Association}%
+      }
+      \strng{namehash}{41dd0846a97d1f1e54b436d9217bae17}
+      \strng{fullhash}{41dd0846a97d1f1e54b436d9217bae17}
+      \strng{bibnamehash}{41dd0846a97d1f1e54b436d9217bae17}
+      \strng{authorbibnamehash}{41dd0846a97d1f1e54b436d9217bae17}
+      \strng{authornamehash}{41dd0846a97d1f1e54b436d9217bae17}
+      \strng{authorfullhash}{41dd0846a97d1f1e54b436d9217bae17}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of experimental psychology: Learning, Memory, and Cognition}
+      \field{number}{4}
+      \field{title}{Creating false memories: Remembering words not presented in lists.}
+      \field{volume}{21}
+      \field{year}{1995}
+      \field{pages}{803}
+      \range{pages}{1}
+    \endentry
+    \entry{sahlin2016influence}{article}{}
+      \name{author}{6}{}{%
+        {{hash=c0f4b3f882c3b50e342aa666666be1ab}{%
+           family={Sahlin},
+           familyi={S\bibinitperiod},
+           given={Eva},
+           giveni={E\bibinitperiod}}}%
+        {{hash=2f4afe404678bac8efd521f9f4e219b3}{%
+           family={Lindeg{å}rd},
+           familyi={L\bibinitperiod},
+           given={Agneta},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5172ac69c266ec14c3eb54ec5acac7d2}{%
+           family={Hadzibajramovic},
+           familyi={H\bibinitperiod},
+           given={Emina},
+           giveni={E\bibinitperiod}}}%
+        {{hash=bbba7dbabd43b12dd0f9d3d48c7f62fd}{%
+           family={Grahn},
+           familyi={G\bibinitperiod},
+           given={Patrik},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0763e3759cf68557497c224cdfd78053}{%
+           family={Vega\bibnamedelima Matuszczyk},
+           familyi={V\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Josefa},
+           giveni={J\bibinitperiod}}}%
+        {{hash=47fb4bc556feac86d76be3a70258c898}{%
+           family={Ahlborg\bibnamedelima Jr},
+           familyi={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Gunnar},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{6b3557fba39456045103fa9cccbce337}
+      \strng{fullhash}{25a7e354397606af5f2458f6647414bc}
+      \strng{bibnamehash}{6b3557fba39456045103fa9cccbce337}
+      \strng{authorbibnamehash}{6b3557fba39456045103fa9cccbce337}
+      \strng{authornamehash}{6b3557fba39456045103fa9cccbce337}
+      \strng{authorfullhash}{25a7e354397606af5f2458f6647414bc}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Landscape Research}
+      \field{number}{1}
+      \field{title}{The influence of the environment on directed attention, blood pressure and heart rate—An experimental study using a relaxation intervention}
+      \field{volume}{41}
+      \field{year}{2016}
+      \field{pages}{7\bibrangedash 25}
+      \range{pages}{19}
+    \endentry
+    \entry{salazar2015mental}{article}{}
+      \name{author}{9}{}{%
+        {{hash=dff0d66806a9a379851fc7fbc69e63a9}{%
+           family={Salazar-López},
+           familyi={S\bibinithyphendelim L\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=d8ccf6804bc332a1d9623517b021b4e5}{%
+           family={Domínguez},
+           familyi={D\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=a3a129374fd78c2b35bb4178065c7fb3}{%
+           family={Ramos},
+           familyi={R\bibinitperiod},
+           given={V\bibnamedelima Juárez},
+           giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=5400ae7684590f14a59a82dfa55b57f2}{%
+           family={De\bibnamedelima la\bibnamedelima Fuente},
+           familyi={D\bibinitperiod\bibinitdelim l\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=03d138497ba78a7cee28cf15f637904d}{%
+           family={Meins},
+           familyi={M\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4b381ad60e88617834130175721af871}{%
+           family={Iborra},
+           familyi={I\bibinitperiod},
+           given={O},
+           giveni={O\bibinitperiod}}}%
+        {{hash=0acf6e23192ba303a10b9b3a230d0f3d}{%
+           family={Gálvez},
+           familyi={G\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a69f5c45d6a2fb3f289d151bbf517c07}{%
+           family={Rodríguez-Artacho},
+           familyi={R\bibinithyphendelim A\bibinitperiod},
+           given={MA},
+           giveni={M\bibinitperiod}}}%
+        {{hash=894ee68a7cdf3c8a4bba9d7557ddd765}{%
+           family={Gómez-Milán},
+           familyi={G\bibinithyphendelim M\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ca1df75ef90521ede88ff6c676f54e64}
+      \strng{fullhash}{a316672ea12f74698a25b05c0947e4ae}
+      \strng{bibnamehash}{ca1df75ef90521ede88ff6c676f54e64}
+      \strng{authorbibnamehash}{ca1df75ef90521ede88ff6c676f54e64}
+      \strng{authornamehash}{ca1df75ef90521ede88ff6c676f54e64}
+      \strng{authorfullhash}{a316672ea12f74698a25b05c0947e4ae}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Consciousness and cognition}
+      \field{title}{The mental and subjective skin: Emotion, empathy, feelings and thermography}
+      \field{volume}{34}
+      \field{year}{2015}
+      \field{pages}{149\bibrangedash 162}
+      \range{pages}{14}
+    \endentry
+    \entry{schmidt2018introducing}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=c9cfb2891d4b3ac8f57d288e5111e23c}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d3e01c8e0155204095a1e73e21b7781b}{%
+           family={Reiss},
+           familyi={R\bibinitperiod},
+           given={Attila},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bef925ace61201018ceb019d969966de}{%
+           family={Duerichen},
+           familyi={D\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5ba816a875f9cb9120f8d4c88c4c4552}{%
+           family={Marberger},
+           familyi={M\bibinitperiod},
+           given={Claus},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2cb911a63d14ee9dc6084333de29db84}{%
+           family={Van\bibnamedelima Laerhoven},
+           familyi={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Kristof},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9ba5abc9c8f5a6184fc010b23df0ca6}
+      \strng{fullhash}{d92e3ce7753f34ae47e188e52af2f959}
+      \strng{bibnamehash}{d9ba5abc9c8f5a6184fc010b23df0ca6}
+      \strng{authorbibnamehash}{d9ba5abc9c8f5a6184fc010b23df0ca6}
+      \strng{authornamehash}{d9ba5abc9c8f5a6184fc010b23df0ca6}
+      \strng{authorfullhash}{d92e3ce7753f34ae47e188e52af2f959}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 20th ACM international conference on multimodal interaction}
+      \field{title}{Introducing wesad, a multimodal dataset for wearable stress and affect detection}
+      \field{year}{2018}
+      \field{pages}{400\bibrangedash 408}
+      \range{pages}{9}
+    \endentry
+    \entry{shaffer2017overview}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6ff0487233565cc4878a5aba967f2bb8}{%
+           family={Shaffer},
+           familyi={S\bibinitperiod},
+           given={Fred},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e09b2e8599e87a3cf6de5947ae9cd406}{%
+           family={Ginsberg},
+           familyi={G\bibinitperiod},
+           given={Jay\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers Media SA}%
+      }
+      \strng{namehash}{ae3be0840ef5a4f1fefd2de39fe66b9d}
+      \strng{fullhash}{ae3be0840ef5a4f1fefd2de39fe66b9d}
+      \strng{bibnamehash}{ae3be0840ef5a4f1fefd2de39fe66b9d}
+      \strng{authorbibnamehash}{ae3be0840ef5a4f1fefd2de39fe66b9d}
+      \strng{authornamehash}{ae3be0840ef5a4f1fefd2de39fe66b9d}
+      \strng{authorfullhash}{ae3be0840ef5a4f1fefd2de39fe66b9d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in public health}
+      \field{title}{An overview of heart rate variability metrics and norms}
+      \field{volume}{5}
+      \field{year}{2017}
+      \field{pages}{258}
+      \range{pages}{1}
+    \endentry
+    \entry{sharma2019dataset}{article}{}
+      \name{author}{5}{}{%
+        {{hash=451ee3e0f867b1231b1751e14eebc684}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Karan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=cabb1e88b32b8e4289b4bcddec42ee4a}{%
+           family={Castellini},
+           familyi={C\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b9ad9beaab4e2529c9a09c9307c72c39}{%
+           family={Van\bibnamedelimb Den\bibnamedelima Broek},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Egon\bibnamedelima L},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=c6c266907563f15ef956ed5ec44d2436}{%
+           family={Albu-Schaeffer},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={Alin},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3e680f73e719a14e933cd7335948b156}{%
+           family={Schwenker},
+           familyi={S\bibinitperiod},
+           given={Friedhelm},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{a725cb259bc46ede70af3846af1c4b1d}
+      \strng{fullhash}{1c1e14ca2126f6209c850e51b0ee1f89}
+      \strng{bibnamehash}{a725cb259bc46ede70af3846af1c4b1d}
+      \strng{authorbibnamehash}{a725cb259bc46ede70af3846af1c4b1d}
+      \strng{authornamehash}{a725cb259bc46ede70af3846af1c4b1d}
+      \strng{authorfullhash}{1c1e14ca2126f6209c850e51b0ee1f89}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientific data}
+      \field{number}{1}
+      \field{title}{A dataset of continuous affect annotations and physiological signals for emotion analysis}
+      \field{volume}{6}
+      \field{year}{2019}
+      \field{pages}{196}
+      \range{pages}{1}
+    \endentry
+    \entry{spathis2020learning}{article}{}
+      \name{author}{5}{}{%
+        {{hash=4ddf0ca516a9a02141a0b66ab482ef22}{%
+           family={Spathis},
+           familyi={S\bibinitperiod},
+           given={Dimitris},
+           giveni={D\bibinitperiod}}}%
+        {{hash=544bdea2c14aa06617288a8504ee2057}{%
+           family={Perez-Pozuelo},
+           familyi={P\bibinithyphendelim P\bibinitperiod},
+           given={Ignacio},
+           giveni={I\bibinitperiod}}}%
+        {{hash=69dd2114c06efe2b4d7344bc28033f95}{%
+           family={Brage},
+           familyi={B\bibinitperiod},
+           given={Soren},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cf38e66f38348630149f21bdc1934886}{%
+           family={Wareham},
+           familyi={W\bibinitperiod},
+           given={Nicholas\bibnamedelima J},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=d8c8e7d2df9a0e7298074097b915c311}{%
+           family={Mascolo},
+           familyi={M\bibinitperiod},
+           given={Cecilia},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{c84261393fe0ffda484c72c7b77a9825}
+      \strng{fullhash}{46442cdc2c8d289a2677535bdfb04847}
+      \strng{bibnamehash}{c84261393fe0ffda484c72c7b77a9825}
+      \strng{authorbibnamehash}{c84261393fe0ffda484c72c7b77a9825}
+      \strng{authornamehash}{c84261393fe0ffda484c72c7b77a9825}
+      \strng{authorfullhash}{46442cdc2c8d289a2677535bdfb04847}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2011.04601}
+      \field{title}{Learning generalizable physiological representations from large-scale wearable data}
+      \field{year}{2020}
+    \endentry
+    \entry{spielberger1999measuring}{book}{}
+      \name{author}{4}{}{%
+        {{hash=79ac7fd64234255d0f236bb53816b65d}{%
+           family={Spielberger},
+           familyi={S\bibinitperiod},
+           given={Charles\bibnamedelima D},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=9d28fcd1237732bd237fb3d84b186c79}{%
+           family={Sydeman},
+           familyi={S\bibinitperiod},
+           given={Sumner\bibnamedelima J},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=00eca18b607ae9815197881dd92fafb8}{%
+           family={Owen},
+           familyi={O\bibinitperiod},
+           given={Ashley\bibnamedelima E},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=bf2eab8dc08da306d3db04fdf1b26232}{%
+           family={Marsh},
+           familyi={M\bibinitperiod},
+           given={Brian\bibnamedelima J},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Lawrence Erlbaum Associates Publishers}%
+      }
+      \strng{namehash}{b361078192ce87478fd2796b3e11cb58}
+      \strng{fullhash}{51ecb5ec679ade1b7d32028567987205}
+      \strng{bibnamehash}{b361078192ce87478fd2796b3e11cb58}
+      \strng{authorbibnamehash}{b361078192ce87478fd2796b3e11cb58}
+      \strng{authornamehash}{b361078192ce87478fd2796b3e11cb58}
+      \strng{authorfullhash}{51ecb5ec679ade1b7d32028567987205}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Measuring anxiety and anger with the State-Trait Anxiety Inventory (STAI) and the State-Trait Anger Expression Inventory (STAXI).}
+      \field{year}{1999}
+    \endentry
+    \entry{Stevens2020EffectsOH}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8348b817c69799dd39bd3ae9256bba2b}{%
+           family={Stevens},
+           familyi={S\bibinitperiod},
+           given={Jeffrey\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=4c893a2b0108de22c4a787c0f40c86f4}{%
+           family={Thayer},
+           familyi={T\bibinitperiod},
+           given={Elise\bibnamedelima R.},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f29af25a06b443df763cc153ec49fb6}
+      \strng{fullhash}{1f29af25a06b443df763cc153ec49fb6}
+      \strng{bibnamehash}{1f29af25a06b443df763cc153ec49fb6}
+      \strng{authorbibnamehash}{1f29af25a06b443df763cc153ec49fb6}
+      \strng{authornamehash}{1f29af25a06b443df763cc153ec49fb6}
+      \strng{authorfullhash}{1f29af25a06b443df763cc153ec49fb6}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Human-animal interaction bulletin}
+      \field{title}{Effects of human-animal interactions on affect and cognition}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:225526352
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:225526352
+      \endverb
+    \endentry
+    \entry{taj2018review}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ab67c9a7270668e07b3ada36bdb30764}{%
+           family={Taj-Eldin},
+           familyi={T\bibinithyphendelim E\bibinitperiod},
+           given={Mohammed},
+           giveni={M\bibinitperiod}}}%
+        {{hash=123b61157f6a6b8bdfad991e844d2696}{%
+           family={Ryan},
+           familyi={R\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=28184c614d03955e0e780fb4e85f79bb}{%
+           family={O’Flynn},
+           familyi={O\bibinitperiod},
+           given={Brendan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c6a83cbfc180ed365b1dca92e884c51c}{%
+           family={Galvin},
+           familyi={G\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{0a76865c198a44f8170e09ecb31196e8}
+      \strng{fullhash}{36a332f496ecc2d9fbaf74701b13662a}
+      \strng{bibnamehash}{0a76865c198a44f8170e09ecb31196e8}
+      \strng{authorbibnamehash}{0a76865c198a44f8170e09ecb31196e8}
+      \strng{authornamehash}{0a76865c198a44f8170e09ecb31196e8}
+      \strng{authorfullhash}{36a332f496ecc2d9fbaf74701b13662a}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors}
+      \field{number}{12}
+      \field{title}{A review of wearable solutions for physiological and emotional monitoring for use by people with autism spectrum disorder and their caregivers}
+      \field{volume}{18}
+      \field{year}{2018}
+      \field{pages}{4271}
+      \range{pages}{1}
+    \endentry
+    \entry{thang2012gait}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=f9bdd98a53fdc55f9322eac63ca686d8}{%
+           family={Thang},
+           familyi={T\bibinitperiod},
+           given={Hoang\bibnamedelima Minh},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c5b58eac6b8baede114ee20a217da38b}{%
+           family={Viet},
+           familyi={V\bibinitperiod},
+           given={Vo\bibnamedelima Quang},
+           giveni={V\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=153e186d8d52d3d44a1d52edb85f92b7}{%
+           family={Thuc},
+           familyi={T\bibinitperiod},
+           given={Nguyen\bibnamedelima Dinh},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=ddef0c52b4d754b9d94cc2a9bd6cdce7}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Deokjai},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{eb07d79cc7bd731dc5b70a53878c969b}
+      \strng{fullhash}{84cea4ac0ea1e94d8a11415a31144f09}
+      \strng{bibnamehash}{eb07d79cc7bd731dc5b70a53878c969b}
+      \strng{authorbibnamehash}{eb07d79cc7bd731dc5b70a53878c969b}
+      \strng{authornamehash}{eb07d79cc7bd731dc5b70a53878c969b}
+      \strng{authorfullhash}{84cea4ac0ea1e94d8a11415a31144f09}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2012 International Conference on Control, Automation and Information Sciences (ICCAIS)}
+      \field{title}{Gait identification using accelerometer on mobile phone}
+      \field{year}{2012}
+      \field{pages}{344\bibrangedash 348}
+      \range{pages}{5}
+    \endentry
+    \entry{thayer2022effects}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4c893a2b0108de22c4a787c0f40c86f4}{%
+           family={Thayer},
+           familyi={T\bibinitperiod},
+           given={Elise\bibnamedelima R},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=8348b817c69799dd39bd3ae9256bba2b}{%
+           family={Stevens},
+           familyi={S\bibinitperiod},
+           given={Jeffrey\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CABI UK}%
+      }
+      \strng{namehash}{68c998d02a0222363b77b1aeb52fd420}
+      \strng{fullhash}{68c998d02a0222363b77b1aeb52fd420}
+      \strng{bibnamehash}{68c998d02a0222363b77b1aeb52fd420}
+      \strng{authorbibnamehash}{68c998d02a0222363b77b1aeb52fd420}
+      \strng{authornamehash}{68c998d02a0222363b77b1aeb52fd420}
+      \strng{authorfullhash}{68c998d02a0222363b77b1aeb52fd420}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Human-Animal Interaction Bulletin}
+      \field{number}{2022}
+      \field{title}{Effects of human-animal interactions on affect and cognition}
+      \field{year}{2022}
+    \endentry
+    \entry{van2019heartpy}{article}{}
+      \name{author}{4}{}{%
+        {{hash=335b8e9fba5358e6c167e37af8e9ed26}{%
+           family={Van\bibnamedelima Gent},
+           familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a70c828e60c7676f63c2f9d343c34e10}{%
+           family={Farah},
+           familyi={F\bibinitperiod},
+           given={Haneen},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a035fe3a9dda1ab52e3cfebabd6ca5d5}{%
+           family={Van\bibnamedelima Nes},
+           familyi={V\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Nicole},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1d428cb484061c6b62ebf08df5788d11}{%
+           family={Van\bibnamedelima Arem},
+           familyi={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Bart},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{a3497f12bf2ccefe2995e0cd4415cf42}
+      \strng{fullhash}{166bf8699511908ba987dc0cc334d9e5}
+      \strng{bibnamehash}{a3497f12bf2ccefe2995e0cd4415cf42}
+      \strng{authorbibnamehash}{a3497f12bf2ccefe2995e0cd4415cf42}
+      \strng{authornamehash}{a3497f12bf2ccefe2995e0cd4415cf42}
+      \strng{authorfullhash}{166bf8699511908ba987dc0cc334d9e5}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Transportation research part F: traffic psychology and behaviour}
+      \field{title}{HeartPy: A novel heart rate algorithm for the analysis of noisy signals}
+      \field{volume}{66}
+      \field{year}{2019}
+      \field{pages}{368\bibrangedash 378}
+      \range{pages}{11}
+    \endentry
+    \entry{watson1988development}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b1bf2c625bb9d6acc91f67ec6cd104b6}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0e0f8985e455129f0f0fd686afc497c1}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Lee\bibnamedelima Anna},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6e8bcb3b122a764e7fe767ee3e0f7b8b}{%
+           family={Tellegen},
+           familyi={T\bibinitperiod},
+           given={Auke},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Psychological Association}%
+      }
+      \strng{namehash}{10ff5ab40a05ca64b540e71d53814da0}
+      \strng{fullhash}{10ff5ab40a05ca64b540e71d53814da0}
+      \strng{bibnamehash}{10ff5ab40a05ca64b540e71d53814da0}
+      \strng{authorbibnamehash}{10ff5ab40a05ca64b540e71d53814da0}
+      \strng{authornamehash}{10ff5ab40a05ca64b540e71d53814da0}
+      \strng{authorfullhash}{10ff5ab40a05ca64b540e71d53814da0}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of personality and social psychology}
+      \field{number}{6}
+      \field{title}{Development and validation of brief measures of positive and negative affect: the PANAS scales.}
+      \field{volume}{54}
+      \field{year}{1988}
+      \field{pages}{1063}
+      \range{pages}{1}
+    \endentry
+    \entry{wetcher2011analyzing}{book}{}
+      \name{author}{1}{}{%
+        {{hash=664f4499b424bedb22372fce923f0218}{%
+           family={Wetcher-Hendricks},
+           familyi={W\bibinithyphendelim H\bibinitperiod},
+           given={Debra},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{664f4499b424bedb22372fce923f0218}
+      \strng{fullhash}{664f4499b424bedb22372fce923f0218}
+      \strng{bibnamehash}{664f4499b424bedb22372fce923f0218}
+      \strng{authorbibnamehash}{664f4499b424bedb22372fce923f0218}
+      \strng{authornamehash}{664f4499b424bedb22372fce923f0218}
+      \strng{authorfullhash}{664f4499b424bedb22372fce923f0218}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Analyzing quantitative data: An introduction for social researchers}
+      \field{year}{2011}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

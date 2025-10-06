@@ -1,0 +1,49 @@
+\documentclass[12pt]{iopart}
+%\newcommand{\gguide}{{\it Preparing graphics for IOP Publishing journals}}
+%Uncomment next line if AMS fonts required
+%\usepackage{iopams}  
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{biblatex} %Imports biblatex package
+\usepackage{lineno}
+\usepackage{graphicx}
+\linenumbers
+
+\addbibresource{sample.bib}
+
+\begin{document}
+
+\title[An Open Source Perovskite Solar Cell Passive Curve Tracer]{An Open Source Perovskite Solar Cell Passive Curve Tracer}
+
+\author{Walker S. Arce}
+\address{University of Nebraska-Lincoln, Department of Electrical and Computer Engineering, Lincoln, 68588, United States}
+\ead{wsarcera@gmail.com}
+\vspace{10pt}
+
+\begin{indented}
+\item[]September 2025
+\end{indented}
+
+\begin{abstract}
+When developing systems for perovskite solar cells, it's important to have a testing platform that closely resembles your deployed systems.  While developing a 1U CubeSat, the Big Red Sat-1, at the University of Nebraska-Lincoln, we found a lack of passive curve tracing instrumentation, which we needed for our mission.  To that end, we developed a benchtop passive curve tracer that leverages the Ossila Solar Simulator as an AM1.0 light source.  This device utilizes a ladder of switched resistors and a precision voltage and current measurement to achieve the curve tracing.  It also integrates a common-anode multiplexer to switch through multi-pixel perovskite solar cells.  Finally, the solar cell holder is separate from the main measurement system, so various substrates sizes and pixel counts can be supported.  This system is tested using various perovskite solar cells.  It has been open sourced to enable reuse in future systems that may benefit from the lower power consumption and flight heritage.
+\end{abstract}
+
+\section*{Introduction}
+
+\section*{Methods}
+
+\section*{Results}
+
+\section*{Discussion}
+
+\section*{Conclusions}
+
+\section*{Acknowledgments} 
+
+\section*{Author contributions statement}
+
+\section*{Competing interests} 
+
+\printbibliography %Prints bibliography
+
+\end{document}
