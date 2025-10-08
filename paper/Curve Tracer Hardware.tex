@@ -30,9 +30,45 @@ When developing systems for perovskite solar cells, it's important to have a tes
 
 \section*{Introduction}
 
+A curve tracer performs a sweep of load conditions to assess how voltage and current vary accordingly.  These two variables are plotted with voltage on the x-axis and current on the y-axis, yielding a variety of common shapes.  Varying the load can be accomplished in many ways, such as using a MOSFET in the triode region, a potentiometer, or using a buck converter \cite{morales2021review}.  
+
+Considering this project was completed for the Big Red Sat-1 mission, we prioritized low-power operation, low-voltage operation, and compact layout for a 1U CubeSat.  The other important aspect is the ability to switch through the multiple pixels that are built onto the substrate.
+
 \section*{Methods}
 
+\subsection*{Curve Tracer}
+
+\subsection*{Common-Anode Multiplexer}
+
 \section*{Results}
+
+\subsection*{Hardware}
+
+\subsection*{Software}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\linewidth]{IMG_1317.jpg}
+	\caption{The assembled curve tracer with a perovskite solar cell installed with light mask.}
+	\label{fig:hardware}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\linewidth]{in use.jpg}
+	\caption{The curve tracer in use with the Ossila solar simulator illuminating the sample.}
+	\label{fig:inuse}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=7.5cm, height=7.5cm]{X017_LM_plotted_Forward.png}
+	\includegraphics[width=8cm, height=7.5cm]{X017_LM_plotted_Reverse.png}
+	\caption{The curve tracer in use with the Ossila solar simulator illuminating the sample.}
+	\label{fig:curves}
+\end{figure}
+
 
 \section*{Discussion}
 

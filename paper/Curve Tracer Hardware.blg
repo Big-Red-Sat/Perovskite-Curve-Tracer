@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is 'IOPLaTeXGuidelines.blg'
-[116] biber-MSWIN64:340> INFO - === 
-[155] Biber.pm:419> INFO - Reading 'IOPLaTeXGuidelines.bcf'
-[250] Biber.pm:979> INFO - Found 54 citekeys in bib section 0
-[262] Biber.pm:4419> INFO - Processing section 0
-[274] Biber.pm:4610> INFO - Looking for bibtex file 'sample.bib' for section 0
-[360] bibtex.pm:1713> INFO - LaTeX decoding ...
-[444] bibtex.pm:1519> INFO - Found BibTeX data source 'sample.bib'
-[729] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[729] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[729] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[729] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[797] bbl.pm:660> INFO - Writing 'IOPLaTeXGuidelines.bbl' with encoding 'UTF-8'
-[824] bbl.pm:763> INFO - Output to IOPLaTeXGuidelines.bbl
+[0] Config.pm:310> INFO - Logfile is 'Curve Tracer Hardware.blg'
+[122] biber-MSWIN64:340> INFO - === 
+[162] Biber.pm:419> INFO - Reading 'Curve Tracer Hardware.bcf'
+[267] Biber.pm:979> INFO - Found 1 citekeys in bib section 0
+[283] Biber.pm:4419> INFO - Processing section 0
+[296] Biber.pm:4610> INFO - Looking for bibtex file 'sample.bib' for section 0
+[354] bibtex.pm:1713> INFO - LaTeX decoding ...
+[371] bibtex.pm:1519> INFO - Found BibTeX data source 'sample.bib'
+[413] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[414] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[414] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[414] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[416] bbl.pm:660> INFO - Writing 'Curve Tracer Hardware.bbl' with encoding 'UTF-8'
+[417] bbl.pm:763> INFO - Output to Curve Tracer Hardware.bbl
