@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'Curve Tracer Hardware.blg'
-[122] biber-MSWIN64:340> INFO - === 
-[162] Biber.pm:419> INFO - Reading 'Curve Tracer Hardware.bcf'
-[267] Biber.pm:979> INFO - Found 1 citekeys in bib section 0
-[283] Biber.pm:4419> INFO - Processing section 0
-[296] Biber.pm:4610> INFO - Looking for bibtex file 'sample.bib' for section 0
-[354] bibtex.pm:1713> INFO - LaTeX decoding ...
-[371] bibtex.pm:1519> INFO - Found BibTeX data source 'sample.bib'
-[413] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[414] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[414] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[414] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[416] bbl.pm:660> INFO - Writing 'Curve Tracer Hardware.bbl' with encoding 'UTF-8'
-[417] bbl.pm:763> INFO - Output to Curve Tracer Hardware.bbl
+[99] biber-MSWIN64:340> INFO - === 
+[136] Biber.pm:419> INFO - Reading 'Curve Tracer Hardware.bcf'
+[227] Biber.pm:979> INFO - Found 15 citekeys in bib section 0
+[239] Biber.pm:4419> INFO - Processing section 0
+[250] Biber.pm:4610> INFO - Looking for bibtex file 'sample.bib' for section 0
+[334] bibtex.pm:1713> INFO - LaTeX decoding ...
+[383] bibtex.pm:1519> INFO - Found BibTeX data source 'sample.bib'
+[501] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[502] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[502] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[502] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[515] bbl.pm:660> INFO - Writing 'Curve Tracer Hardware.bbl' with encoding 'UTF-8'
+[526] bbl.pm:763> INFO - Output to Curve Tracer Hardware.bbl

@@ -2361,7 +2361,28 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">sample.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">morales2021review</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">velilla2019outdoor</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">kirmani2023metal</bcf:citekey>
+    <bcf:citekey order="2" intorder="2">mcmillon2022would</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">mcmillon2022would</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">zhu2020comprehensive</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">zhu2020comprehensive</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">aguilar2017charging</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">sahbel2013experimental</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">rivai2014binary</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">zhu2020comprehensive</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">zhu2020comprehensive</bcf:citekey>
+    <bcf:citekey order="10" intorder="2">arce2024big</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">silverman2025durability</bcf:citekey>
+    <bcf:citekey order="11" intorder="2">fisher2025measurement</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">arce2024big</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">zhu2020comprehensive</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">lopez2021design</bcf:citekey>
+    <bcf:citekey order="14" intorder="2">pulungan2022design</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">arce2024big</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">krishnan2019factors</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">guo2021degradation</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">domanski2018systematic</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

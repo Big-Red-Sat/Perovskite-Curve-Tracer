@@ -19,59 +19,776 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{morales2021review}{article}{}
-      \name{author}{6}{}{%
-        {{hash=62a764a359fde9cf22edc3008e8877d9}{%
-           family={Morales-Aragonés},
-           familyi={M\bibinithyphendelim A\bibinitperiod},
-           given={José\bibnamedelima Ignacio},
-           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
-        {{hash=e310c5d5044cb757e1e42466c97cfab7}{%
-           family={Dávila-Sacoto},
-           familyi={D\bibinithyphendelim S\bibinitperiod},
-           given={Miguel},
-           giveni={M\bibinitperiod}}}%
-        {{hash=6efba951320aa617c57d2dd06426f223}{%
-           family={González},
-           familyi={G\bibinitperiod},
-           given={Luis\bibnamedelima G},
-           giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=b632ef17cdb62a4c63624f20e30ae91e}{%
-           family={Alonso-Gómez},
-           familyi={A\bibinithyphendelim G\bibinitperiod},
-           given={Víctor},
+    \entry{aguilar2017charging}{article}{}
+      \name{author}{3}{}{%
+        {{hash=95d3b16d74d9c01d3f663e2196ebf244}{%
+           family={Aguilar},
+           familyi={A\bibinitperiod},
+           given={Horacio\bibnamedelima Munguía},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=5ef8220a47293e1a8b0c963c9a8db19b}{%
+           family={Maldonado},
+           familyi={M\bibinitperiod},
+           given={Rigoberto\bibnamedelima Franco},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=2a546c1322087330f4982132080a61e4}{%
+           family={Navarro},
+           familyi={N\bibinitperiod},
+           given={Luis\bibnamedelima Barba},
+           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{ca3de7c8400700806fe31bf5bf827a9f}
+      \strng{fullhash}{ca3de7c8400700806fe31bf5bf827a9f}
+      \strng{bibnamehash}{ca3de7c8400700806fe31bf5bf827a9f}
+      \strng{authorbibnamehash}{ca3de7c8400700806fe31bf5bf827a9f}
+      \strng{authornamehash}{ca3de7c8400700806fe31bf5bf827a9f}
+      \strng{authorfullhash}{ca3de7c8400700806fe31bf5bf827a9f}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics Education}
+      \field{number}{4}
+      \field{title}{Charging a capacitor with a photovoltaic module}
+      \field{volume}{52}
+      \field{year}{2017}
+      \field{pages}{045016}
+      \range{pages}{1}
+    \endentry
+    \entry{arce2024big}{inproceedings}{}
+      \name{author}{10}{}{%
+        {{hash=cd678c54c292d712deb4c2ffa848dc85}{%
+           family={Arce},
+           familyi={A\bibinitperiod},
+           given={Walker\bibnamedelima S},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=5ffa8b9d6fc68144edd346c62cd3b34c}{%
+           family={Orsi},
+           familyi={O\bibinitperiod},
+           given={Vince},
            giveni={V\bibinitperiod}}}%
-        {{hash=71894bcb3eedb663f359e87fd01d8c2a}{%
-           family={Gallardo-Saavedra},
-           familyi={G\bibinithyphendelim S\bibinitperiod},
-           given={Sara},
+        {{hash=c5960969b9d0eb22f114013838b731f2}{%
+           family={Wayman},
+           familyi={W\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+        {{hash=dab64d6e3f7e70f9c09177e2939dc9c2}{%
+           family={Murch-Shafer},
+           familyi={M\bibinithyphendelim S\bibinitperiod},
+           given={Joel},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1eb2b413e20052ed549049436e390479}{%
+           family={Stelling},
+           familyi={S\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=cd4eac548a4b55ebf9ef21b5cd97f0e6}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=df72824c463d4128b63ad0e713939510}{%
+           family={Schutt},
+           familyi={S\bibinitperiod},
+           given={Kelly},
+           giveni={K\bibinitperiod}}}%
+        {{hash=594aac75dc8150e1de994f8b8e2682dd}{%
+           family={Luther},
+           familyi={L\bibinitperiod},
+           given={Joseph\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=74a1dc246d8270133eacb141dc69b574}{%
+           family={Afshari},
+           familyi={A\bibinitperiod},
+           given={Hadi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=4927cb9bcc1ac06acafcb28fc9410fed}{%
+           family={Sellers},
+           familyi={S\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{67c7dd5539eed9f8c873d96b8920f20f}
+      \strng{fullhash}{a3ecb85bdc7190ad04a19788fd311509}
+      \strng{bibnamehash}{67c7dd5539eed9f8c873d96b8920f20f}
+      \strng{authorbibnamehash}{67c7dd5539eed9f8c873d96b8920f20f}
+      \strng{authornamehash}{67c7dd5539eed9f8c873d96b8920f20f}
+      \strng{authorfullhash}{a3ecb85bdc7190ad04a19788fd311509}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the AIAA/USU Conference on Small Satellites}
+      \field{series}{Weekend Session III: Science/Mission Payloads Research and Academia 1}
+      \field{title}{Big Red Sat-1: Mission overview and future opportunities for perovskites in low Earth orbit}
+      \field{year}{2024}
+    \endentry
+    \entry{domanski2018systematic}{article}{}
+      \name{author}{5}{}{%
+        {{hash=299650f8dec21da71440099cf0aa655d}{%
+           family={Domanski},
+           familyi={D\bibinitperiod},
+           given={Konrad},
+           giveni={K\bibinitperiod}}}%
+        {{hash=d9f0036c944964b0542d91d302d17208}{%
+           family={Alharbi},
+           familyi={A\bibinitperiod},
+           given={Essa\bibnamedelima A},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=15d9a9c87140b5abccd0c7713533d1ae}{%
+           family={Hagfeldt},
+           familyi={H\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a7791322d0d4e56fe468c952b588bde7}{%
+           family={Grätzel},
+           familyi={G\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=df57c04d2c9f56914f56971b828822b5}{%
+           family={Tress},
+           familyi={T\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{bed73d746ebfffb7dbb85a5249ae9592}
+      \strng{fullhash}{6c6a2530853524b7c6b4b13315f221dc}
+      \strng{bibnamehash}{bed73d746ebfffb7dbb85a5249ae9592}
+      \strng{authorbibnamehash}{bed73d746ebfffb7dbb85a5249ae9592}
+      \strng{authornamehash}{bed73d746ebfffb7dbb85a5249ae9592}
+      \strng{authorfullhash}{6c6a2530853524b7c6b4b13315f221dc}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Energy}
+      \field{number}{1}
+      \field{title}{Systematic investigation of the impact of operation conditions on the degradation behaviour of perovskite solar cells}
+      \field{volume}{3}
+      \field{year}{2018}
+      \field{pages}{61\bibrangedash 67}
+      \range{pages}{7}
+    \endentry
+    \entry{fisher2025measurement}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=8bbb1b443cb672869743691d20bef15b}{%
+           family={Fisher},
+           familyi={F\bibinitperiod},
+           given={Dallas},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9afc8d78b9b1dc7c9b6974cc163def45}{%
+           family={Guthery},
+           familyi={G\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7102ced35026e5e2303b0f4998ba48c9}{%
+           family={Olander},
+           familyi={O\bibinitperiod},
+           given={Sydney},
            giveni={S\bibinitperiod}}}%
-        {{hash=293dea7857f1d1442ebacc5e6b32ea43}{%
-           family={Hernández-Callejo},
-           familyi={H\bibinithyphendelim C\bibinitperiod},
-           given={Luis},
+        {{hash=be2d64161c3bb0b4a4262b5d51bb0116}{%
+           family={Haque},
+           familyi={H\bibinitperiod},
+           given={Md\bibnamedelima Azimul},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=594aac75dc8150e1de994f8b8e2682dd}{%
+           family={Luther},
+           familyi={L\bibinitperiod},
+           given={Joseph\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=df6a7bf6113053d9b46d72d22cdce05b}{%
+           family={Christians},
+           familyi={C\bibinitperiod},
+           given={Jeffrey\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c051d183f098936904ed146a5f5e49c4}
+      \strng{fullhash}{59302eb47f1059d273d5e7f81d7ae738}
+      \strng{bibnamehash}{c051d183f098936904ed146a5f5e49c4}
+      \strng{authorbibnamehash}{c051d183f098936904ed146a5f5e49c4}
+      \strng{authornamehash}{c051d183f098936904ed146a5f5e49c4}
+      \strng{authorfullhash}{59302eb47f1059d273d5e7f81d7ae738}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2025 IEEE 53rd Photovoltaic Specialists Conference (PVSC)}
+      \field{title}{Measurement System for Long-Term Outdoor Testing of Research Scale Solar Cells}
+      \field{year}{2025}
+      \field{pages}{0779\bibrangedash 0779}
+      \range{pages}{1}
+    \endentry
+    \entry{guo2021degradation}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=97779426812103f2cb15d3b4c2d92b2d}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Renjun},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1ed08c7415bfefb96aa617252b831f3f}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=06debc36f6b61a405e8f0da1c7ccd6ca}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=96a73b622616a0f38efb87981b1ffcd6}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Linjie},
            giveni={L\bibinitperiod}}}%
+        {{hash=6dcc5b4fee3749f560b48c98dd223c63}{%
+           family={Ji},
+           familyi={J\bibinitperiod},
+           given={Kangyu},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7d538159aac2046b74a733686c1b029d}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Qiu},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=391bd922cd09bdb153b215ab21a3ac31}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Saisai},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fc550b8b8fdcb00d8f700b910cfd9312}{%
+           family={Reb},
+           familyi={R\bibinitperiod},
+           given={Lennart\bibnamedelima K},
+           giveni={L\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=79ac6d4859509b013cd221bb9195bcee}{%
+           family={Scheel},
+           familyi={S\bibinitperiod},
+           given={Manuel\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6478b32c42f78a379a2fbce49ccdaf3e}{%
+           family={Pratap},
+           familyi={P\bibinitperiod},
+           given={Shambhavi},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{6bfaed87468f01de5aacbb7df9213507}
+      \strng{fullhash}{537ae17c7643208fb0b11a042fec889a}
+      \strng{bibnamehash}{6bfaed87468f01de5aacbb7df9213507}
+      \strng{authorbibnamehash}{6bfaed87468f01de5aacbb7df9213507}
+      \strng{authornamehash}{6bfaed87468f01de5aacbb7df9213507}
+      \strng{authorfullhash}{537ae17c7643208fb0b11a042fec889a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature energy}
+      \field{number}{10}
+      \field{title}{Degradation mechanisms of perovskite solar cells under vacuum and one atmosphere of nitrogen}
+      \field{volume}{6}
+      \field{year}{2021}
+      \field{pages}{977\bibrangedash 986}
+      \range{pages}{10}
+    \endentry
+    \entry{kirmani2023metal}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=868248ffcfb13e1f1d2db34c7ca0779f}{%
+           family={Kirmani},
+           familyi={K\bibinitperiod},
+           given={Ahmad\bibnamedelima R},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=e5a916b45c5f4a725d3c955525721e35}{%
+           family={Ostrowski},
+           familyi={O\bibinitperiod},
+           given={David\bibnamedelima P},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=27ddfb0d3dce34b81d992b37fc46cc14}{%
+           family={VanSant},
+           familyi={V\bibinitperiod},
+           given={Kaitlyn\bibnamedelima T},
+           giveni={K\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=a3686cc1f1ab7dfca2bb7b47cd1bab4e}{%
+           family={Byers},
+           familyi={B\bibinitperiod},
+           given={Todd\bibnamedelima A},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=67de0fc6b521683b695da41c55cdb661}{%
+           family={Bramante},
+           familyi={B\bibinitperiod},
+           given={Rosemary\bibnamedelima C},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=684b82f014c32c655551bf12f6d99f19}{%
+           family={Heinselman},
+           familyi={H\bibinitperiod},
+           given={Karen\bibnamedelima N},
+           giveni={K\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=ecee13edd3b7258c47652ba9fb60508b}{%
+           family={Tong},
+           familyi={T\bibinitperiod},
+           given={Jinhui},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d5893299177be2022b729e938c6fa9fe}{%
+           family={Stevens},
+           familyi={S\bibinitperiod},
+           given={Bart},
+           giveni={B\bibinitperiod}}}%
+        {{hash=39dbd5fab16ddd275fc64e56b074d545}{%
+           family={Nemeth},
+           familyi={N\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=b85e8f5a9e9c3a037948c29bb4bf6b7e}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{6032213e7f65da468af76dc234060f26}
+      \strng{fullhash}{b317eb84f10bfbb1fbd60ae233876ac4}
+      \strng{bibnamehash}{6032213e7f65da468af76dc234060f26}
+      \strng{authorbibnamehash}{6032213e7f65da468af76dc234060f26}
+      \strng{authornamehash}{6032213e7f65da468af76dc234060f26}
+      \strng{authorfullhash}{b317eb84f10bfbb1fbd60ae233876ac4}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Energy}
+      \field{number}{2}
+      \field{title}{Metal oxide barrier layers for terrestrial and space perovskite photovoltaics}
+      \field{volume}{8}
+      \field{year}{2023}
+      \field{pages}{191\bibrangedash 202}
+      \range{pages}{12}
+    \endentry
+    \entry{krishnan2019factors}{article}{}
+      \name{author}{4}{}{%
+        {{hash=8343a33f5f32fa9b28fa6d861293a176}{%
+           family={Krishnan},
+           familyi={K\bibinitperiod},
+           given={Unni},
+           giveni={U\bibinitperiod}}}%
+        {{hash=108f133a84151934027d33b04ae3ea39}{%
+           family={Kaur},
+           familyi={K\bibinitperiod},
+           given={Manjot},
+           giveni={M\bibinitperiod}}}%
+        {{hash=27ed58bf493f2c911ea32c10f3062d8d}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Manjeet},
+           giveni={M\bibinitperiod}}}%
+        {{hash=98b68cb6ce407dcb5bdc6f714284339d}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Akshay},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Society of Photo-Optical Instrumentation Engineers}%
+      }
+      \strng{namehash}{60bc26064e37b29ec41dc7bd543400c2}
+      \strng{fullhash}{d5f6cf2837c2d923a1d669fc2962b05a}
+      \strng{bibnamehash}{60bc26064e37b29ec41dc7bd543400c2}
+      \strng{authorbibnamehash}{60bc26064e37b29ec41dc7bd543400c2}
+      \strng{authornamehash}{60bc26064e37b29ec41dc7bd543400c2}
+      \strng{authorfullhash}{d5f6cf2837c2d923a1d669fc2962b05a}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Photonics for Energy}
+      \field{number}{2}
+      \field{title}{Factors affecting the stability of perovskite solar cells: a comprehensive review}
+      \field{volume}{9}
+      \field{year}{2019}
+      \field{pages}{021001\bibrangedash 021001}
+      \range{pages}{1}
+    \endentry
+    \entry{lopez2021design}{article}{}
+      \name{author}{9}{}{%
+        {{hash=8f0e5593653221d4cb9eca2f6019be29}{%
+           family={López},
+           familyi={L\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=65d7c8da21f083376d7c3eadb2468670}{%
+           family={Ramírez},
+           familyi={R\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod}}}%
+        {{hash=38e56a194182fe5f1f13f3efa9609ec8}{%
+           family={Alonso-Montesinos},
+           familyi={A\bibinithyphendelim M\bibinitperiod},
+           given={Joaquín},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d825287bbb3c3ec3f522967267d84622}{%
+           family={Sarmiento},
+           familyi={S\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=943f2e28a4585ce16b946ea8d4102831}{%
+           family={Polo},
+           familyi={P\bibinitperiod},
+           given={Jesús},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2bfe79cdc26d9c7f59735ff2e6ef9931}{%
+           family={Martín-Chivelet},
+           familyi={M\bibinithyphendelim C\bibinitperiod},
+           given={Nuria},
+           giveni={N\bibinitperiod}}}%
+        {{hash=7735eb4e681c3741aa4c44c130809dd0}{%
+           family={Marzo},
+           familyi={M\bibinitperiod},
+           given={Aitor},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9cd7b45249d7636140328602dcf5ec5b}{%
+           family={Batlles},
+           familyi={B\bibinitperiod},
+           given={Francisco\bibnamedelima Javier},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=98a482e4eea93e1eebd688029a32b084}{%
+           family={Ferrada},
+           familyi={F\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {MDPI}%
       }
-      \strng{namehash}{c5c3d2c78fa374afc1be5015177bce49}
-      \strng{fullhash}{e8eb2d84b0f6fa1f0e81067f543784ab}
-      \strng{bibnamehash}{c5c3d2c78fa374afc1be5015177bce49}
-      \strng{authorbibnamehash}{c5c3d2c78fa374afc1be5015177bce49}
-      \strng{authornamehash}{c5c3d2c78fa374afc1be5015177bce49}
-      \strng{authorfullhash}{e8eb2d84b0f6fa1f0e81067f543784ab}
+      \strng{namehash}{d43e8365e85cf87561f31540cf364751}
+      \strng{fullhash}{b645a713e91c216cd75cc520675f238a}
+      \strng{bibnamehash}{d43e8365e85cf87561f31540cf364751}
+      \strng{authorbibnamehash}{d43e8365e85cf87561f31540cf364751}
+      \strng{authornamehash}{d43e8365e85cf87561f31540cf364751}
+      \strng{authorfullhash}{b645a713e91c216cd75cc520675f238a}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Energies}
+      \field{number}{14}
+      \field{title}{Design of a low-cost multiplexer for the study of the impact of soiling on PV panel performance}
+      \field{volume}{14}
+      \field{year}{2021}
+      \field{pages}{4186}
+      \range{pages}{1}
+    \endentry
+    \entry{mcmillon2022would}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=92aafa940cbf5c581ca7b7de7c41d2bd}{%
+           family={McMillon-Brown},
+           familyi={M\bibinithyphendelim B\bibinitperiod},
+           given={Lyndsey},
+           giveni={L\bibinitperiod}}}%
+        {{hash=594aac75dc8150e1de994f8b8e2682dd}{%
+           family={Luther},
+           familyi={L\bibinitperiod},
+           given={Joseph\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=4804e65a7957e1cae778d552d7ef222b}{%
+           family={Peshek},
+           familyi={P\bibinitperiod},
+           given={Timothy\bibnamedelima J},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{e285dbe140849f03ca9e7a101b2fb76a}
+      \strng{fullhash}{e285dbe140849f03ca9e7a101b2fb76a}
+      \strng{bibnamehash}{e285dbe140849f03ca9e7a101b2fb76a}
+      \strng{authorbibnamehash}{e285dbe140849f03ca9e7a101b2fb76a}
+      \strng{authornamehash}{e285dbe140849f03ca9e7a101b2fb76a}
+      \strng{authorfullhash}{e285dbe140849f03ca9e7a101b2fb76a}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Electronics}
-      \field{number}{11}
-      \field{title}{A review of I--V tracers for photovoltaic modules: topologies and challenges}
-      \field{volume}{10}
-      \field{year}{2021}
-      \field{pages}{1283}
+      \field{title}{What would it take to manufacture perovskite solar cells in space?}
+      \field{year}{2022}
+    \endentry
+    \entry{pulungan2022design}{article}{}
+      \name{author}{5}{}{%
+        {{hash=806ba3bf652141877b359555d16ab5ba}{%
+           family={Pulungan},
+           familyi={P\bibinitperiod},
+           given={Ali\bibnamedelima Basrah},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=5122a8d41cd5a763d0065a09329bb158}{%
+           family={Son},
+           familyi={S\bibinitperiod},
+           given={Lovely},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e85fda866e3dce64ef94b8d759281b0a}{%
+           family={Syafii},
+           familyi={S\bibinitperiod},
+           given={Syafii},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bf68b886b80a0b127cc16f297a9838c8}{%
+           family={Huda},
+           familyi={H\bibinitperiod},
+           given={Syamsul},
+           giveni={S\bibinitperiod}}}%
+        {{hash=971c41059d904debc9f13c59731f3b21}{%
+           family={Ubaidillah},
+           familyi={U\bibinitperiod},
+           given={Ubaidillah},
+           giveni={U\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {UIKTEN-Association for Information Communication Technology Education and~…}%
+      }
+      \strng{namehash}{a694a8772b3b86adbaa6996949aa6a53}
+      \strng{fullhash}{5f4dc11c5e6eaffd1241881e284a1c7e}
+      \strng{bibnamehash}{a694a8772b3b86adbaa6996949aa6a53}
+      \strng{authorbibnamehash}{a694a8772b3b86adbaa6996949aa6a53}
+      \strng{authornamehash}{a694a8772b3b86adbaa6996949aa6a53}
+      \strng{authorfullhash}{5f4dc11c5e6eaffd1241881e284a1c7e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{TEM Journal}
+      \field{number}{1}
+      \field{title}{Design and implementation data logger with integrated circuit multiplexer for solar panel park}
+      \field{volume}{11}
+      \field{year}{2022}
+      \field{pages}{427}
       \range{pages}{1}
+    \endentry
+    \entry{rivai2014binary}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4fcf2bec922393f1a54754b56d29a7d9}{%
+           family={Rivai},
+           familyi={R\bibinitperiod},
+           given={Ahmad},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9921b70d6cf9f3c26655dca850ffa98f}{%
+           family={Rahim},
+           familyi={R\bibinitperiod},
+           given={Nasrudin\bibnamedelima Abd},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{44c88b2e84cc0a1c3a1deab871eb2f94}
+      \strng{fullhash}{44c88b2e84cc0a1c3a1deab871eb2f94}
+      \strng{bibnamehash}{44c88b2e84cc0a1c3a1deab871eb2f94}
+      \strng{authorbibnamehash}{44c88b2e84cc0a1c3a1deab871eb2f94}
+      \strng{authornamehash}{44c88b2e84cc0a1c3a1deab871eb2f94}
+      \strng{authorfullhash}{44c88b2e84cc0a1c3a1deab871eb2f94}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IET Renewable Power Generation}
+      \field{number}{6}
+      \field{title}{Binary-based tracer of photovoltaic array characteristics}
+      \field{volume}{8}
+      \field{year}{2014}
+      \field{pages}{621\bibrangedash 628}
+      \range{pages}{8}
+    \endentry
+    \entry{sahbel2013experimental}{article}{}
+      \name{author}{4}{}{%
+        {{hash=bb545120f3f155837257c7745864efff}{%
+           family={Sahbel},
+           familyi={S\bibinitperiod},
+           given={Anwar},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4cff6898e6da32c2fc2910acc1bbbe7c}{%
+           family={Hassan},
+           familyi={H\bibinitperiod},
+           given={Naggar},
+           giveni={N\bibinitperiod}}}%
+        {{hash=01b79a6b567cd1b95ff9c9d42fbc4e12}{%
+           family={Abdelhameed},
+           familyi={A\bibinitperiod},
+           given={Magdy\bibnamedelima M},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=fad5f84091ac4c0cc82bbe41a9e9900d}{%
+           family={Zekry},
+           familyi={Z\bibinitperiod},
+           given={Abdelhalim},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{48f18bb93f16aebd335af4075fa69886}
+      \strng{fullhash}{c851676f5d7f1fce0909e2834a1e0fa9}
+      \strng{bibnamehash}{48f18bb93f16aebd335af4075fa69886}
+      \strng{authorbibnamehash}{48f18bb93f16aebd335af4075fa69886}
+      \strng{authornamehash}{48f18bb93f16aebd335af4075fa69886}
+      \strng{authorfullhash}{c851676f5d7f1fce0909e2834a1e0fa9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Energy Procedia}
+      \field{title}{Experimental performance characterization of photovoltaic modules using DAQ}
+      \field{volume}{36}
+      \field{year}{2013}
+      \field{pages}{323\bibrangedash 332}
+      \range{pages}{10}
+    \endentry
+    \entry{silverman2025durability}{article}{}
+      \name{author}{7}{}{%
+        {{hash=b0568ff35711105ffca50434efe8ce8b}{%
+           family={Silverman},
+           familyi={S\bibinitperiod},
+           given={Timothy\bibnamedelima J},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=cd1ee5292cab1bce8aea7780b7090704}{%
+           family={Deceglie},
+           familyi={D\bibinitperiod},
+           given={Michael\bibnamedelima G},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=2abc3978a808a122443a031b1b7cb736}{%
+           family={Repins},
+           familyi={R\bibinitperiod},
+           given={Ingrid},
+           giveni={I\bibinitperiod}}}%
+        {{hash=237ac878ff6481a843bc937010859d9a}{%
+           family={Owen-Bellini},
+           familyi={O\bibinithyphendelim B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2127d148b3534d2b413b5c8809f46436}{%
+           family={Berry},
+           familyi={B\bibinitperiod},
+           given={Joseph\bibnamedelima J},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=610c1468df631e5052f8157273872145}{%
+           family={Stein},
+           familyi={S\bibinitperiod},
+           given={Joshua\bibnamedelima S},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=238369ed58d1399e502c015003ea66aa}{%
+           family={Schelhas},
+           familyi={S\bibinitperiod},
+           given={Laura\bibnamedelima T},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{ad663d2d52ac0c16eddf9ac494c3563d}
+      \strng{fullhash}{49ea20409e6fd68b50f9e238fa84672d}
+      \strng{bibnamehash}{ad663d2d52ac0c16eddf9ac494c3563d}
+      \strng{authorbibnamehash}{ad663d2d52ac0c16eddf9ac494c3563d}
+      \strng{authornamehash}{ad663d2d52ac0c16eddf9ac494c3563d}
+      \strng{authorfullhash}{49ea20409e6fd68b50f9e238fa84672d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Energy}
+      \field{title}{Durability research is pivotal for perovskite photovoltaics}
+      \field{year}{2025}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+    \endentry
+    \entry{velilla2019outdoor}{article}{}
+      \name{author}{5}{}{%
+        {{hash=d8a3332dfd9f65d8b7131fc57cc3789b}{%
+           family={Velilla},
+           familyi={V\bibinitperiod},
+           given={Esteban},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e40facd69643a196689636684c5d9d60}{%
+           family={Ramirez},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1259917ae4a82bcd44e5be84335c5977}{%
+           family={Uribe},
+           familyi={U\bibinitperiod},
+           given={Jose-Ignacio},
+           giveni={J\bibinithyphendelim I\bibinitperiod}}}%
+        {{hash=1b28bbc058ac1f6768b40126fe92d0a3}{%
+           family={Montoya},
+           familyi={M\bibinitperiod},
+           given={Juan\bibnamedelima F},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=49bab7f2ac0aad04fa3bc117e18ec20f}{%
+           family={Jaramillo},
+           familyi={J\bibinitperiod},
+           given={Franklin},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{37f2a6b25621448d4557ddef29a0a00f}
+      \strng{fullhash}{e6331aff0d0b1dff7d60477f0d8195d8}
+      \strng{bibnamehash}{37f2a6b25621448d4557ddef29a0a00f}
+      \strng{authorbibnamehash}{37f2a6b25621448d4557ddef29a0a00f}
+      \strng{authornamehash}{37f2a6b25621448d4557ddef29a0a00f}
+      \strng{authorfullhash}{e6331aff0d0b1dff7d60477f0d8195d8}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Solar Energy Materials and Solar Cells}
+      \field{title}{Outdoor performance of perovskite solar technology: Silicon comparison and competitive advantages at different irradiances}
+      \field{volume}{191}
+      \field{year}{2019}
+      \field{pages}{15\bibrangedash 20}
+      \range{pages}{6}
+    \endentry
+    \entry{zhu2020comprehensive}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c9d21ec6cc58e69f58260c79b0835956}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Yechen},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bfb3236c162a660c2da9ff8c93fef5ca}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Weidong},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{3871090ea0c529195e1c81ec736e8aa1}
+      \strng{fullhash}{3871090ea0c529195e1c81ec736e8aa1}
+      \strng{bibnamehash}{3871090ea0c529195e1c81ec736e8aa1}
+      \strng{authorbibnamehash}{3871090ea0c529195e1c81ec736e8aa1}
+      \strng{authornamehash}{3871090ea0c529195e1c81ec736e8aa1}
+      \strng{authorfullhash}{3871090ea0c529195e1c81ec736e8aa1}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Solar Energy}
+      \field{title}{A comprehensive review of topologies for photovoltaic I--V curve tracer}
+      \field{volume}{196}
+      \field{year}{2020}
+      \field{pages}{346\bibrangedash 357}
+      \range{pages}{12}
     \endentry
   \enddatalist
 \endrefsection
