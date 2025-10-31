@@ -58,6 +58,34 @@
       \field{pages}{045016}
       \range{pages}{1}
     \endentry
+    \entry{Arce_pyOssila_2023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2da906324f1cc2f806c0c007e1d99d60}{%
+           family={Arce},
+           familyi={A\bibinitperiod},
+           given={Walker},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{2da906324f1cc2f806c0c007e1d99d60}
+      \strng{fullhash}{2da906324f1cc2f806c0c007e1d99d60}
+      \strng{bibnamehash}{2da906324f1cc2f806c0c007e1d99d60}
+      \strng{authorbibnamehash}{2da906324f1cc2f806c0c007e1d99d60}
+      \strng{authornamehash}{2da906324f1cc2f806c0c007e1d99d60}
+      \strng{authorfullhash}{2da906324f1cc2f806c0c007e1d99d60}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{title}{{pyOssila}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://github.com/wsarce/pyOssila
+      \endverb
+      \verb{url}
+      \verb https://github.com/wsarce/pyOssila
+      \endverb
+    \endentry
     \entry{arce2024big}{inproceedings}{}
       \name{author}{10}{}{%
         {{hash=cd678c54c292d712deb4c2ffa848dc85}{%
@@ -378,6 +406,44 @@
       \field{year}{2023}
       \field{pages}{191\bibrangedash 202}
       \range{pages}{12}
+    \endentry
+    \entry{lutherinreview}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{4}{}{%
+        {{hash=4bf1dcaf2e64749eae88d31a5825de72}{%
+           family={Kong},
+           familyi={K\bibinitperiod},
+           given={Carlton},
+           giveni={C\bibinitperiod}}}%
+        {{hash=df72824c463d4128b63ad0e713939510}{%
+           family={Schutt},
+           familyi={S\bibinitperiod},
+           given={Kelly},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c1a7a41eed86bc4e35ce25296f785f70}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Mohin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2da906324f1cc2f806c0c007e1d99d60}{%
+           family={Arce},
+           familyi={A\bibinitperiod},
+           given={Walker},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{18b25ab9b3e884c5eaf47138a79c15ca}
+      \strng{fullhash}{48fb8ed57a18457fe3ce5ded0785d6bc}
+      \strng{bibnamehash}{18b25ab9b3e884c5eaf47138a79c15ca}
+      \strng{authorbibnamehash}{18b25ab9b3e884c5eaf47138a79c15ca}
+      \strng{authornamehash}{18b25ab9b3e884c5eaf47138a79c15ca}
+      \strng{authorfullhash}{48fb8ed57a18457fe3ce5ded0785d6bc}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{In Review}
+      \field{title}{Phosphonic acid reinforced PTAA for deployable p-i-n perovskite photovoltaics}
     \endentry
     \entry{krishnan2019factors}{article}{}
       \name{author}{4}{}{%
@@ -708,6 +774,64 @@
       \field{year}{2025}
       \field{pages}{1\bibrangedash 7}
       \range{pages}{7}
+    \endentry
+    \entry{teverovsky1999relay}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=8b4357b53c6b3a15cf0ad129fd709380}{%
+           family={Teverovsky},
+           familyi={T\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ASM International}%
+      }
+      \strng{namehash}{8b4357b53c6b3a15cf0ad129fd709380}
+      \strng{fullhash}{8b4357b53c6b3a15cf0ad129fd709380}
+      \strng{bibnamehash}{8b4357b53c6b3a15cf0ad129fd709380}
+      \strng{authorbibnamehash}{8b4357b53c6b3a15cf0ad129fd709380}
+      \strng{authornamehash}{8b4357b53c6b3a15cf0ad129fd709380}
+      \strng{authorfullhash}{8b4357b53c6b3a15cf0ad129fd709380}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Symposium for Testing and Failure Analysis}
+      \field{title}{Relay failures specific to space applications}
+      \field{volume}{30835}
+      \field{year}{1999}
+      \field{pages}{285\bibrangedash 292}
+      \range{pages}{8}
+    \endentry
+    \entry{van1995python}{book}{}
+      \name{author}{2}{}{%
+        {{hash=e504145eff12cd8803c227c919ccfacd}{%
+           family={Van\bibnamedelima Rossum},
+           familyi={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bf4b931c97bf1765ef2a50cdb0a42969}{%
+           family={Drake\bibnamedelima Jr},
+           familyi={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Fred\bibnamedelima L},
+           giveni={F\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Centrum voor Wiskunde en Informatica Amsterdam, The Netherlands}%
+      }
+      \strng{namehash}{7ef38a15b789891031dc3c2618872607}
+      \strng{fullhash}{7ef38a15b789891031dc3c2618872607}
+      \strng{bibnamehash}{7ef38a15b789891031dc3c2618872607}
+      \strng{authorbibnamehash}{7ef38a15b789891031dc3c2618872607}
+      \strng{authornamehash}{7ef38a15b789891031dc3c2618872607}
+      \strng{authorfullhash}{7ef38a15b789891031dc3c2618872607}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Python tutorial}
+      \field{volume}{620}
+      \field{year}{1995}
     \endentry
     \entry{velilla2019outdoor}{article}{}
       \name{author}{5}{}{%
