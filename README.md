@@ -2,8 +2,10 @@
 This project contains the hardware and software source for the curve tracer developed to evaluate perovskite solar cell samples.
 
 ## Hardware
+The hardware is licensed under a CERN Open Hardware Licence Version 2 - Strongly Reciprocal license.  The developed hardware performs a passive curve tracing process that utilizes a low-Ohm resistor ladder, realized through analog switches and precision resistors.  The multiplexing of the perovskite solar cells is achieved through a low-Ohm analog SPDT relay.  Provisions are also made for an I2C connection to a temperature sensor on the sample holder.  A simple control interface is provisioned through USB for controlling the hardware and retrieve readings.
 
 ## Software
+The software is licensed under an MIT license.  
 
 ## Performance
 
